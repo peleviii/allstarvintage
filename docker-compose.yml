@@ -4,16 +4,13 @@ services:
     container_name: allstarvintage
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "8081:80"
     volumes:
       - ./index.html:/usr/share/nginx/html/index.html
       - ./fonts:/usr/share/nginx/html/fonts
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      # docker-compose.yml - πρόσθεσε στα volumes:
       - ./img/logos:/usr/share/nginx/html/img/logos
-    networks:
-      - web
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
 
 networks:
-  web:
+  default:
     driver: bridge
