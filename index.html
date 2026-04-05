@@ -7,21 +7,16 @@
       Markopoulo Volleyball All Star Vintage Tournament | allstarvintage.gr
     </title>
     <style>
-      /* Bebas Neue */
       @font-face {
         font-family: "Bebas Neue";
         src: url("fonts/BebasNeue-Regular.ttf") format("truetype");
         font-weight: 400;
-        font-style: normal;
         font-display: swap;
       }
-
-      /* Playfair Display */
       @font-face {
         font-family: "Playfair Display";
         src: url("fonts/PlayfairDisplay-Regular.ttf") format("truetype");
         font-weight: 400;
-        font-style: normal;
         font-display: swap;
       }
       @font-face {
@@ -35,86 +30,66 @@
         font-family: "Playfair Display";
         src: url("fonts/PlayfairDisplay-Bold.ttf") format("truetype");
         font-weight: 700;
-        font-style: normal;
         font-display: swap;
       }
-      @font-face {
-        font-family: "Playfair Display";
-        src: url("fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype");
-        font-weight: 700;
-        font-style: italic;
-        font-display: swap;
-      }
-
-      /* Barlow Condensed */
       @font-face {
         font-family: "Barlow Condensed";
         src: url("fonts/BarlowCondensed-Light.ttf") format("truetype");
         font-weight: 300;
-        font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: "Barlow Condensed";
         src: url("fonts/BarlowCondensed-Regular.ttf") format("truetype");
         font-weight: 400;
-        font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: "Barlow Condensed";
         src: url("fonts/BarlowCondensed-SemiBold.ttf") format("truetype");
         font-weight: 600;
-        font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: "Barlow Condensed";
         src: url("fonts/BarlowCondensed-Bold.ttf") format("truetype");
         font-weight: 700;
-        font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: "Barlow Condensed";
         src: url("fonts/BarlowCondensed-Black.ttf") format("truetype");
         font-weight: 900;
-        font-style: normal;
         font-display: swap;
       }
     </style>
     <style>
       :root {
-        --cream: #f5edd6;
-        --warm-white: #faf6ee;
-        --gold: #c8973a;
-        --gold-light: #e8b84b;
-        --dark-brown: #1a1208;
-        --brown: #3d2b0e;
-        --rust: #b84a2f;
-        --olive: #4a5240;
-        --sand: #d4b896;
-        --ink: #0f0b05;
+        --cream: #eef6ff;
+        --warm-white: #f5faff;
+        --gold: #6dcaf3;
+        --gold-light: #9adcf7;
+        --dark-brown: #0d1f3c;
+        --brown: #1f3464;
+        --rust: #1f3464;
+        --olive: #2a4a7f;
+        --sand: #a8d8f0;
+        --ink: #070f1e;
       }
-
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-
       html {
         scroll-behavior: smooth;
       }
-
       body {
         background-color: var(--cream);
         color: var(--dark-brown);
         font-family: "Barlow Condensed", sans-serif;
         overflow-x: hidden;
       }
-
-      /* GRAIN OVERLAY */
       body::before {
         content: "";
         position: fixed;
@@ -125,48 +100,80 @@
         opacity: 0.6;
       }
 
-      /* NAV */
-      nav {
-        position: fixed;
+      /* HEADER */
+      .site-header {
+        width: 100%;
+        height: 180px;
+        position: sticky;
         top: 0;
-        left: 0;
-        right: 0;
         z-index: 100;
-        padding: 16px 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: rgba(26, 18, 8, 0.92);
-        backdrop-filter: blur(8px);
-        border-bottom: 1px solid rgba(200, 151, 58, 0.3);
+        overflow: hidden;
+        display: block;
+      }
+      .hdr-left {
+        position: absolute;
+        inset: 0;
+        background: #ffffff;
+        clip-path: polygon(0 0, 83% 0, 79% 76%, 0 100%);
+      }
+      .hdr-right {
+        position: absolute;
+        inset: 0;
+        background: #1f3464;
+        clip-path: polygon(100% 0, 83% 0, 79% 76%, 100% 100%);
+      }
+      .header-logo-left {
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 180px;
+        width: auto;
+        object-fit: contain;
+        z-index: 2;
+      }
+      .header-logo-right {
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 180px;
+        width: auto;
+        object-fit: contain;
+        z-index: 2;
       }
 
-      .nav-logo {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 1.4rem;
-        color: var(--gold);
-        letter-spacing: 2px;
+      /* FOOTER */
+      .site-footer {
+        width: 100%;
+        height: 100px;
+        position: sticky;
+        bottom: 0;
+        z-index: 100;
+        overflow: hidden;
+        display: block;
       }
-
-      .nav-links {
-        display: flex;
-        gap: 32px;
-        list-style: none;
+      .ftr-left {
+        position: absolute;
+        inset: 0;
+        background: #ffffff;
+  clip-path: polygon(0 0, 79% 24%, 83% 100%, 0 100%);
       }
-
-      .nav-links a {
-        text-decoration: none;
-        color: var(--cream);
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 600;
-        font-size: 0.85rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        transition: color 0.2s;
+      .ftr-right {
+        position: absolute;
+        inset: 0;
+        background: #1f3464;
+  clip-path: polygon(100% 0, 79% 24%, 83% 100%, 100% 100%);
       }
-
-      .nav-links a:hover {
-        color: var(--gold);
+      .footer-logo-center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 60px;
+        width: auto;
+        object-fit: contain;
+        z-index: 2;
       }
 
       /* HERO */
@@ -179,29 +186,26 @@
         justify-content: center;
         overflow: hidden;
       }
-
       .hero-bg {
         position: absolute;
         inset: 0;
         background:
           radial-gradient(
             ellipse at 20% 50%,
-            rgba(200, 151, 58, 0.12) 0%,
+            rgba(109, 202, 243, 0.15) 0%,
             transparent 60%
           ),
           radial-gradient(
             ellipse at 80% 20%,
-            rgba(184, 74, 47, 0.1) 0%,
+            rgba(109, 202, 243, 0.08) 0%,
             transparent 50%
           ),
           radial-gradient(
             ellipse at 60% 80%,
-            rgba(74, 82, 64, 0.15) 0%,
+            rgba(31, 52, 100, 0.3) 0%,
             transparent 50%
           );
       }
-
-      /* Volleyball net line */
       .hero-net {
         position: absolute;
         top: 0;
@@ -210,22 +214,20 @@
         width: 2px;
         background: repeating-linear-gradient(
           to bottom,
-          rgba(200, 151, 58, 0.4) 0px,
-          rgba(200, 151, 58, 0.4) 8px,
+          rgba(109, 202, 243, 0.4) 0px,
+          rgba(109, 202, 243, 0.4) 8px,
           transparent 8px,
           transparent 18px
         );
         transform: translateX(-50%);
         opacity: 0.3;
       }
-
-      /* Decorative circle */
       .hero-circle {
         position: absolute;
         width: 600px;
         height: 600px;
         border-radius: 50%;
-        border: 1px solid rgba(200, 151, 58, 0.15);
+        border: 1px solid rgba(109, 202, 243, 0.15);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -236,9 +238,8 @@
         position: absolute;
         inset: 40px;
         border-radius: 50%;
-        border: 1px solid rgba(200, 151, 58, 0.08);
+        border: 1px solid rgba(109, 202, 243, 0.08);
       }
-
       @keyframes rotateCircle {
         from {
           transform: translate(-50%, -50%) rotate(0deg);
@@ -247,7 +248,6 @@
           transform: translate(-50%, -50%) rotate(360deg);
         }
       }
-
       .hero-content {
         position: relative;
         z-index: 2;
@@ -255,7 +255,6 @@
         padding: 120px 20px 60px;
         max-width: 900px;
       }
-
       .hero-year {
         font-family: "Barlow Condensed", sans-serif;
         font-weight: 300;
@@ -267,16 +266,14 @@
         opacity: 0;
         animation: fadeUp 0.8s 0.2s forwards;
       }
-
       .hero-badge {
         display: inline-block;
-        border: 1px solid rgba(200, 151, 58, 0.5);
+        border: 1px solid rgba(109, 202, 243, 0.5);
         padding: 6px 20px;
         margin-bottom: 32px;
         opacity: 0;
         animation: fadeUp 0.8s 0.4s forwards;
       }
-
       .hero-badge span {
         font-family: "Barlow Condensed", sans-serif;
         font-size: 0.75rem;
@@ -284,7 +281,6 @@
         color: var(--sand);
         text-transform: uppercase;
       }
-
       .hero-title {
         font-family: "Bebas Neue", sans-serif;
         font-size: clamp(4rem, 12vw, 9rem);
@@ -295,12 +291,10 @@
         opacity: 0;
         animation: fadeUp 0.8s 0.6s forwards;
       }
-
       .hero-title .accent {
         color: var(--gold);
         display: block;
       }
-
       .hero-title .italic {
         font-family: "Playfair Display", serif;
         font-style: italic;
@@ -310,7 +304,6 @@
         letter-spacing: 4px;
         margin-top: 8px;
       }
-
       .hero-sub {
         font-family: "Barlow Condensed", sans-serif;
         font-weight: 300;
@@ -322,7 +315,6 @@
         opacity: 0;
         animation: fadeUp 0.8s 0.8s forwards;
       }
-
       .hero-cta {
         display: inline-flex;
         gap: 16px;
@@ -331,7 +323,6 @@
         opacity: 0;
         animation: fadeUp 0.8s 1s forwards;
       }
-
       .btn-primary {
         background: var(--gold);
         color: var(--dark-brown);
@@ -347,12 +338,10 @@
         transition: all 0.2s;
         display: inline-block;
       }
-
       .btn-primary:hover {
         background: var(--gold-light);
         transform: translateY(-2px);
       }
-
       .btn-outline {
         background: transparent;
         color: var(--cream);
@@ -368,12 +357,10 @@
         transition: all 0.2s;
         display: inline-block;
       }
-
       .btn-outline:hover {
         border-color: var(--gold);
         color: var(--gold);
       }
-
       .hero-scroll {
         position: absolute;
         bottom: 32px;
@@ -386,21 +373,18 @@
         opacity: 0;
         animation: fadeUp 0.8s 1.4s forwards;
       }
-
       .hero-scroll span {
         font-size: 0.65rem;
         letter-spacing: 3px;
         color: var(--sand);
         text-transform: uppercase;
       }
-
       .scroll-line {
         width: 1px;
         height: 40px;
         background: linear-gradient(to bottom, var(--gold), transparent);
         animation: scrollPulse 2s infinite;
       }
-
       @keyframes scrollPulse {
         0%,
         100% {
@@ -412,7 +396,6 @@
           transform: scaleY(1.1);
         }
       }
-
       @keyframes fadeUp {
         from {
           opacity: 0;
@@ -424,7 +407,6 @@
         }
       }
 
-      /* DIVIDER */
       .divider {
         display: flex;
         align-items: center;
@@ -432,7 +414,6 @@
         margin: 0 auto 48px;
         max-width: 300px;
       }
-
       .divider-line {
         flex: 1;
         height: 1px;
@@ -443,17 +424,13 @@
           transparent
         );
       }
-
       .divider-icon {
         color: var(--gold);
         font-size: 1.2rem;
       }
-
-      /* SECTION */
       section {
         padding: 100px 40px;
       }
-
       .section-label {
         font-family: "Barlow Condensed", sans-serif;
         font-weight: 600;
@@ -464,7 +441,6 @@
         text-align: center;
         margin-bottom: 16px;
       }
-
       .section-title {
         font-family: "Bebas Neue", sans-serif;
         font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -473,7 +449,6 @@
         margin-bottom: 16px;
         line-height: 1;
       }
-
       .section-sub {
         font-family: "Playfair Display", serif;
         font-style: italic;
@@ -483,19 +458,17 @@
         margin-bottom: 64px;
       }
 
-      /* ABOUT */
       .about {
         background: var(--warm-white);
         position: relative;
         overflow: hidden;
       }
-
       .about::before {
         content: "VINTAGE";
         position: absolute;
         font-family: "Bebas Neue", sans-serif;
         font-size: 20vw;
-        color: rgba(200, 151, 58, 0.04);
+        color: rgba(109, 202, 243, 0.04);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -503,7 +476,6 @@
         pointer-events: none;
         letter-spacing: 10px;
       }
-
       .about-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -511,7 +483,6 @@
         max-width: 1100px;
         margin: 0 auto;
       }
-
       .about-card {
         background: var(--cream);
         padding: 48px 36px;
@@ -519,11 +490,9 @@
         position: relative;
         transition: transform 0.3s;
       }
-
       .about-card:hover {
         transform: translateY(-4px);
       }
-
       .about-card::before {
         content: "";
         position: absolute;
@@ -535,17 +504,14 @@
         transform: scaleX(0);
         transition: transform 0.3s;
       }
-
       .about-card:hover::before {
         transform: scaleX(1);
       }
-
       .card-icon {
         font-size: 2.5rem;
         margin-bottom: 20px;
         display: block;
       }
-
       .card-num {
         font-family: "Bebas Neue", sans-serif;
         font-size: 3.5rem;
@@ -553,7 +519,6 @@
         line-height: 1;
         display: block;
       }
-
       .card-label {
         font-family: "Barlow Condensed", sans-serif;
         font-weight: 700;
@@ -564,7 +529,6 @@
         margin-top: 4px;
         display: block;
       }
-
       .card-text {
         font-family: "Barlow Condensed", sans-serif;
         font-size: 1rem;
@@ -574,21 +538,18 @@
         font-weight: 400;
       }
 
-      /* SCHEDULE */
       .schedule {
         background: var(--dark-brown);
         color: var(--cream);
         position: relative;
         overflow: hidden;
       }
-
       .schedule .section-title {
         color: var(--cream);
       }
       .schedule .section-sub {
         color: var(--sand);
       }
-
       .schedule-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -596,25 +557,21 @@
         max-width: 900px;
         margin: 0 auto;
       }
-
       .schedule-day {
-        border: 1px solid rgba(200, 151, 58, 0.2);
+        border: 1px solid rgba(109, 202, 243, 0.2);
         padding: 40px;
         position: relative;
         transition: border-color 0.3s;
       }
-
       .schedule-day:hover {
         border-color: var(--gold);
       }
-
       .day-label {
         font-family: "Bebas Neue", sans-serif;
         font-size: 3rem;
         color: var(--gold);
         line-height: 1;
       }
-
       .day-date {
         font-family: "Barlow Condensed", sans-serif;
         font-size: 0.75rem;
@@ -624,28 +581,24 @@
         margin-bottom: 24px;
         display: block;
       }
-
       .schedule-item {
         display: flex;
         gap: 16px;
         margin-bottom: 16px;
         align-items: flex-start;
         padding-bottom: 16px;
-        border-bottom: 1px solid rgba(200, 151, 58, 0.1);
+        border-bottom: 1px solid rgba(109, 202, 243, 0.1);
       }
-
       .schedule-item:last-child {
         border-bottom: none;
         margin-bottom: 0;
       }
-
       .item-time {
         font-family: "Bebas Neue", sans-serif;
         font-size: 1.2rem;
         color: var(--gold);
         min-width: 70px;
       }
-
       .item-desc {
         font-family: "Barlow Condensed", sans-serif;
         font-size: 0.95rem;
@@ -654,11 +607,9 @@
         line-height: 1.5;
       }
 
-      /* TEAMS */
       .teams {
         background: var(--cream);
       }
-
       .teams-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -666,20 +617,18 @@
         max-width: 1100px;
         margin: 0 auto;
       }
-
       .team-card {
         background: var(--warm-white);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         padding: 40px 24px;
         text-align: center;
         transition: all 0.3s;
-        cursor: default;
+        cursor: pointer;
         position: relative;
         overflow: hidden;
+        text-decoration: none;
+        display: block;
+        color: inherit;
       }
-
       .team-card::after {
         content: "";
         position: absolute;
@@ -691,7 +640,6 @@
         transform: scaleX(0);
         transition: transform 0.3s;
       }
-
       .team-card:hover {
         background: var(--dark-brown);
       }
@@ -701,30 +649,25 @@
       .team-card:hover .team-city {
         color: var(--sand);
       }
-      .team-card:hover .team-shield {
-        filter: invert(1) sepia(1) saturate(2) hue-rotate(5deg);
-      }
       .team-card:hover::after {
         transform: scaleX(1);
       }
-
       .team-shield {
-        font-size: 3rem;
+        width: 72px;
+        height: 72px;
+        object-fit: contain;
         margin-bottom: 16px;
         display: block;
+        margin-left: auto;
+        margin-right: auto;
         transition: filter 0.3s;
-        width: 60px;
-        height: 60px;
-        object-fit: contain;
       }
-
       .team-name {
         font-family: "Bebas Neue", sans-serif;
         font-size: 1.3rem;
         letter-spacing: 2px;
         transition: color 0.3s;
       }
-
       .team-city {
         font-family: "Barlow Condensed", sans-serif;
         font-size: 0.75rem;
@@ -736,12 +679,62 @@
         display: block;
       }
 
-      /* GALLERY */
+      .sponsors {
+        background: var(--warm-white);
+        padding: 80px 40px;
+        text-align: center;
+      }
+      .sponsors-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        flex-wrap: wrap;
+        margin-top: 48px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .sponsor-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 40px 48px;
+        border: 1px solid rgba(109, 202, 243, 0.2);
+        transition:
+          border-color 0.3s,
+          transform 0.3s;
+        background: white;
+      }
+      .sponsor-card:hover {
+        border-color: var(--gold);
+        transform: translateY(-4px);
+      }
+      .sponsor-card a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+      .sponsor-logo {
+        width: 160px;
+        height: 100px;
+        object-fit: contain;
+      }
+      .sponsor-label {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 0.75rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--brown);
+      }
+
       .gallery {
         background: var(--brown);
         padding: 80px 0;
       }
-
       .gallery .section-title {
         color: var(--cream);
         padding: 0 40px;
@@ -756,7 +749,6 @@
       .gallery .divider {
         margin-bottom: 48px;
       }
-
       .gallery-track {
         display: flex;
         gap: 16px;
@@ -766,16 +758,14 @@
         -ms-overflow-style: none;
         padding-bottom: 8px;
       }
-
       .gallery-track::-webkit-scrollbar {
         display: none;
       }
-
       .gallery-item {
         flex: 0 0 280px;
         height: 340px;
         background: var(--dark-brown);
-        border: 1px solid rgba(200, 151, 58, 0.2);
+        border: 1px solid rgba(109, 202, 243, 0.2);
         position: relative;
         overflow: hidden;
         display: flex;
@@ -783,11 +773,9 @@
         padding: 24px;
         transition: border-color 0.3s;
       }
-
       .gallery-item:hover {
         border-color: var(--gold);
       }
-
       .gallery-item-bg {
         position: absolute;
         inset: 0;
@@ -800,24 +788,20 @@
           opacity 0.3s,
           transform 0.4s;
       }
-
       .gallery-item:hover .gallery-item-bg {
         opacity: 0.12;
         transform: scale(1.1);
       }
-
       .gallery-item-caption {
         position: relative;
         z-index: 1;
       }
-
       .gallery-item-caption h4 {
         font-family: "Bebas Neue", sans-serif;
         font-size: 1.1rem;
         color: var(--cream);
         letter-spacing: 1px;
       }
-
       .gallery-item-caption span {
         font-family: "Barlow Condensed", sans-serif;
         font-size: 0.75rem;
@@ -826,7 +810,6 @@
         text-transform: uppercase;
       }
 
-      /* REGISTRATION */
       .registration {
         background: var(--rust);
         color: var(--cream);
@@ -835,9 +818,8 @@
         position: relative;
         overflow: hidden;
       }
-
       .registration::before {
-        content: "2025";
+        content: "2026";
         position: absolute;
         font-family: "Bebas Neue", sans-serif;
         font-size: 30vw;
@@ -850,7 +832,6 @@
         letter-spacing: 5px;
         line-height: 1;
       }
-
       .registration .section-title {
         color: var(--cream);
       }
@@ -868,7 +849,6 @@
       .registration .divider-icon {
         color: var(--cream);
       }
-
       .reg-info {
         display: flex;
         justify-content: center;
@@ -876,11 +856,9 @@
         margin: 48px 0;
         flex-wrap: wrap;
       }
-
       .reg-item {
         text-align: center;
       }
-
       .reg-item strong {
         display: block;
         font-family: "Bebas Neue", sans-serif;
@@ -888,7 +866,6 @@
         color: var(--cream);
         line-height: 1;
       }
-
       .reg-item span {
         font-family: "Barlow Condensed", sans-serif;
         font-size: 0.75rem;
@@ -896,13 +873,15 @@
         text-transform: uppercase;
         color: rgba(245, 237, 214, 0.7);
       }
-
       .reg-cta {
         position: relative;
         z-index: 1;
         margin-top: 48px;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
       }
-
       .btn-white {
         background: var(--cream);
         color: var(--rust);
@@ -918,48 +897,59 @@
         transition: all 0.2s;
         display: inline-block;
       }
-
       .btn-white:hover {
         background: var(--dark-brown);
         color: var(--gold);
         transform: translateY(-2px);
       }
+      .btn-white-outline {
+        background: transparent;
+        color: var(--cream);
+        padding: 16px 52px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        cursor: pointer;
+        transition: all 0.2s;
+        display: inline-block;
+      }
+      .btn-white-outline:hover {
+        border-color: white;
+        background: rgba(255, 255, 255, 0.1);
+      }
 
-      /* CONTACT */
       .contact {
         background: var(--warm-white);
         padding: 80px 40px;
       }
-
       .contact-inner {
         max-width: 700px;
         margin: 0 auto;
         text-align: center;
       }
-
       .contact-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 32px;
         margin-top: 48px;
       }
-
       .contact-item {
         padding: 32px 16px;
-        border: 1px solid rgba(200, 151, 58, 0.2);
+        border: 1px solid rgba(109, 202, 243, 0.2);
         transition: border-color 0.3s;
       }
-
       .contact-item:hover {
         border-color: var(--gold);
       }
-
       .contact-icon {
         font-size: 1.8rem;
         margin-bottom: 12px;
         display: block;
       }
-
       .contact-item h4 {
         font-family: "Barlow Condensed", sans-serif;
         font-weight: 700;
@@ -969,54 +959,20 @@
         color: var(--gold);
         margin-bottom: 8px;
       }
-
       .contact-item p {
         font-family: "Barlow Condensed", sans-serif;
         font-size: 0.95rem;
         color: var(--brown);
         line-height: 1.6;
       }
-
-      /* FOOTER */
-      footer {
-        background: var(--ink);
-        color: var(--sand);
-        padding: 40px;
-        text-align: center;
+      .contact-item a {
+        color: var(--brown);
+        text-decoration: none;
       }
-
-      .footer-logo {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 2rem;
+      .contact-item a:hover {
         color: var(--gold);
-        letter-spacing: 3px;
-        margin-bottom: 8px;
       }
 
-      .footer-domain {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 0.8rem;
-        letter-spacing: 3px;
-        color: var(--sand);
-        margin-bottom: 24px;
-      }
-
-      .footer-sep {
-        width: 60px;
-        height: 1px;
-        background: var(--gold);
-        margin: 24px auto;
-        opacity: 0.4;
-      }
-
-      .footer-copy {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 0.75rem;
-        letter-spacing: 2px;
-        color: rgba(212, 184, 150, 0.5);
-      }
-
-      /* STAMP DECORATION */
       .stamp {
         display: inline-block;
         border: 3px solid var(--gold);
@@ -1025,22 +981,18 @@
         margin: 24px 0;
         position: relative;
       }
-
       .stamp::before {
         content: "";
         position: absolute;
         inset: 4px;
-        border: 1px solid rgba(200, 151, 58, 0.3);
+        border: 1px solid rgba(109, 202, 243, 0.3);
       }
-
       .stamp-text {
         font-family: "Bebas Neue", sans-serif;
         font-size: 1.1rem;
         letter-spacing: 3px;
         color: var(--gold);
       }
-
-      /* SCROLL REVEAL */
       .reveal {
         opacity: 0;
         transform: translateY(40px);
@@ -1048,26 +1000,35 @@
           opacity 0.7s,
           transform 0.7s;
       }
-
       .reveal.visible {
         opacity: 1;
         transform: translateY(0);
       }
 
-      /* RESPONSIVE */
+      @media (max-width: 900px) {
+        .site-header {
+          height: 90px;
+        }
+        .header-logo-left {
+          height: 60px;
+          left: 16px;
+        }
+        .header-logo-right {
+          height: 60px;
+          right: 16px;
+        }
+        .site-footer {
+          height: 60px;
+        }
+        .footer-logo-center {
+          height: 36px;
+        }
+      }
       @media (max-width: 768px) {
-        nav {
-          padding: 16px 20px;
-        }
-        .nav-links {
-          display: none;
-        }
         section {
           padding: 80px 20px;
         }
-        .about-grid {
-          grid-template-columns: 1fr;
-        }
+        .about-grid,
         .schedule-grid {
           grid-template-columns: 1fr;
         }
@@ -1080,30 +1041,45 @@
         .reg-info {
           gap: 32px;
         }
+        .sponsors-grid {
+          gap: 32px;
+        }
+        .sponsor-card {
+          padding: 24px;
+        }
+        .sponsor-logo {
+          width: 120px;
+          height: 70px;
+        }
       }
     </style>
   </head>
   <body>
-    <!-- NAV -->
-    <nav>
-      <div class="nav-logo">ASV · 2025</div>
-      <ul class="nav-links">
-        <li><a href="#about">Τουρνουά</a></li>
-        <li><a href="#schedule">Πρόγραμμα</a></li>
-        <li><a href="#teams">Ομάδες</a></li>
-        <li><a href="#registration">Εγγραφές</a></li>
-        <li><a href="#contact">Επικοινωνία</a></li>
-      </ul>
-    </nav>
+    <header class="site-header">
+      <div class="hdr-left"></div>
+      <div class="hdr-right"></div>
+      <a href="https://www.patt.gov.gr/" target="_blank" rel="noopener">
+        <img
+          src="img/Agkalia_Attikis_logo_4.png"
+          alt="Αγκαλιά της Αττικής"
+          class="header-logo-left"
+        />
+      </a>
+      <a href="https://www.patt.gov.gr/" target="_blank" rel="noopener">
+        <img
+          src="img/white_centered.png"
+          alt="Περιφέρεια Αττικής"
+          class="header-logo-right"
+        />
+      </a>
+    </header>
 
-    <!-- HERO -->
     <section class="hero">
       <div class="hero-bg"></div>
       <div class="hero-net"></div>
       <div class="hero-circle"></div>
-
       <div class="hero-content">
-        <div class="hero-year">Markopoulo · Αττική · 2025</div>
+        <div class="hero-year">Markopoulo · Αττική · 2026</div>
         <div class="hero-badge"><span>⬥ Τουρνουά Παλαιμάχων ⬥</span></div>
         <h1 class="hero-title">
           <span>All Star</span>
@@ -1112,18 +1088,17 @@
         </h1>
         <p class="hero-sub">Markopoulo Volleyball · allstarvintage.gr</p>
         <div class="hero-cta">
-          <a href="#registration" class="btn-primary">Εγγραφή Ομάδας</a>
-          <a href="#schedule" class="btn-outline">Δες το Πρόγραμμα</a>
+          <a href="registration.html" class="btn-primary">Εγγραφή Ομάδας</a>
+          <a href="rules.html" class="btn-outline">Κανονισμός</a>
+          <a href="#schedule" class="btn-outline">Πρόγραμμα</a>
         </div>
       </div>
-
       <div class="hero-scroll">
         <span>Scroll</span>
         <div class="scroll-line"></div>
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section class="about" id="about">
       <p class="section-label reveal">Για το Τουρνουά</p>
       <h2 class="section-title reveal">Η Ιστορία Ξαναρχίζει</h2>
@@ -1135,37 +1110,32 @@
         <div class="divider-icon">🏐</div>
         <div class="divider-line"></div>
       </div>
-
       <div class="about-grid">
         <div class="about-card reveal">
-          <span class="card-icon">🏆</span>
-          <span class="card-num">1ο</span>
-          <span class="card-label">Επετειακό Τουρνουά</span>
+          <span class="card-icon">🏆</span><span class="card-num">1ο</span
+          ><span class="card-label">Επετειακό Τουρνουά</span>
           <p class="card-text">
             Η αρχή μιας παράδοσης που θα μείνει. Παλαίμαχοι από όλη την Αττική
             έρχονται στο Μαρκόπουλο.
           </p>
         </div>
         <div class="about-card reveal">
-          <span class="card-icon">👥</span>
-          <span class="card-num">8+</span>
-          <span class="card-label">Ομάδες</span>
+          <span class="card-icon">👥</span><span class="card-num">8+</span
+          ><span class="card-label">Ομάδες</span>
           <p class="card-text">
             Πρώην αθλητές υψηλού επιπέδου ξαναφοράνε τις φανέλες τους. Το πάθος
             δεν έχει ηλικία.
           </p>
         </div>
         <div class="about-card reveal">
-          <span class="card-icon">📅</span>
-          <span class="card-num">2</span>
-          <span class="card-label">Μέρες Αγώνων</span>
+          <span class="card-icon">📅</span><span class="card-num">2</span
+          ><span class="card-label">Μέρες Αγώνων</span>
           <p class="card-text">
             Ένα αξέχαστο διήμερο γεμάτο αγώνες, συναντήσεις παλιών φίλων και
             εορτασμό του σπορ.
           </p>
         </div>
       </div>
-
       <div style="text-align: center; margin-top: 64px" class="reveal">
         <div class="stamp">
           <div class="stamp-text">Markopoulo · Athens · Greece</div>
@@ -1187,7 +1157,6 @@
       </div>
     </section>
 
-    <!-- SCHEDULE -->
     <section class="schedule" id="schedule">
       <p class="section-label reveal">Αγωνιστικό</p>
       <h2 class="section-title reveal">Πρόγραμμα</h2>
@@ -1197,11 +1166,10 @@
         <div class="divider-icon">🏐</div>
         <div class="divider-line"></div>
       </div>
-
       <div class="schedule-grid">
         <div class="schedule-day reveal">
           <div class="day-label">Day 01</div>
-          <span class="day-date">Σάββατο · Ιούνιος 2025</span>
+          <span class="day-date">Σάββατο · 2026</span>
           <div class="schedule-item">
             <span class="item-time">09:00</span>
             <div class="item-desc">Άνοιγμα εγκατάστασης & εγγραφές ομάδων</div>
@@ -1231,7 +1199,7 @@
         </div>
         <div class="schedule-day reveal">
           <div class="day-label">Day 02</div>
-          <span class="day-date">Κυριακή · Ιούνιος 2025</span>
+          <span class="day-date">Κυριακή · 2026</span>
           <div class="schedule-item">
             <span class="item-time">09:00</span>
             <div class="item-desc">Προθέρμανση & Ημιτελικοί Αγώνες</div>
@@ -1264,7 +1232,6 @@
       </div>
     </section>
 
-    <!-- TEAMS -->
     <section class="teams" id="teams">
       <p class="section-label reveal">Συμμετέχουσες</p>
       <h2 class="section-title reveal">Ομάδες</h2>
@@ -1274,60 +1241,79 @@
         <div class="divider-icon">🏐</div>
         <div class="divider-line"></div>
       </div>
-
-      <div class="teams-grid">
-        <div class="team-card reveal">
-         <img class="team-shield" src="img/logos/marko.png" alt="Markopoulo Legends" />
-          <div class="team-name">Markopoulo 1 Legends</div>
-          <span class="team-city">Μαρκόπουλο</span>
-        </div>
-        <div class="team-card reveal">
-          <span class="team-shield"><icon>🦁</icon></span>
-          <div class="team-name">Attica All Stars</div>
-          <span class="team-city">Αττική</span>
-        </div>
-        <div class="team-card reveal">
-          <span class="team-shield"><icon>⚡</icon></span>
-          <div class="team-name">Porto Rafti BC</div>
-          <span class="team-city">Πόρτο Ράφτη</span>
-        </div>
-        <div class="team-card reveal">
-          <span class="team-shield"><icon>🌊</icon></span>
-          <div class="team-name">Lavrio Vintage</div>
-          <span class="team-city">Λαύριο</span>
-        </div>
-        <div class="team-card reveal">
-          <span class="team-shield"><icon>🌟</icon></span>
-          <div class="team-name">Koropi Classic</div>
-          <span class="team-city">Κορωπί</span>
-        </div>
-        <div class="team-card reveal">
-          <span class="team-shield"><icon>🔥</icon></span>
-          <div class="team-name">Spata Legends</div>
-          <span class="team-city">Σπάτα</span>
-        </div>
-        <div class="team-card reveal">
-          <span class="team-shield"><icon>🏔️</icon></span>
-          <div class="team-name">Vari Old Boys</div>
-          <span class="team-city">Βάρη</span>
-        </div>
-        <div
+      <div class="teams-grid" id="teamsGrid">
+        <a
+          href="registration.html"
           class="team-card reveal"
+          id="addTeamCard"
           style="
             background: var(--dark-brown);
-            border: 2px dashed rgba(200, 151, 58, 0.3);
+            border: 2px dashed rgba(109, 202, 243, 0.3);
           "
         >
-          <span class="team-shield" style="opacity: 0.4">➕</span>
+          <span
+            style="
+              font-size: 3rem;
+              opacity: 0.4;
+              display: block;
+              margin-bottom: 16px;
+            "
+            >➕</span
+          >
           <div class="team-name" style="color: var(--gold)">Η Ομάδα Σου</div>
           <span class="team-city" style="color: var(--sand)"
             >Εγγράψου Τώρα</span
+          >
+        </a>
+      </div>
+    </section>
+
+    <section class="sponsors" id="sponsors">
+      <p class="section-label reveal">Στην Αγκαλιά της Αττικής</p>
+      <p class="section-sub reveal">
+        Πολιτισμός · Αθλητισμός στις Γειτονιές μας
+      </p>
+      <p
+        class="section-label reveal"
+        style="
+          font-size: 0.9rem;
+          letter-spacing: 2px;
+          color: var(--brown);
+          font-family: &quot;Barlow Condensed&quot;;
+          text-transform: none;
+          font-style: normal;
+          margin-bottom: 0;
+        "
+      >
+        Με την υποστήριξη της Περιφέρειας Αττικής και του Δήμου Μαρκοπούλου
+      </p>
+      <div class="divider reveal" style="margin-top: 32px">
+        <div class="divider-line"></div>
+        <div class="divider-icon">🏐</div>
+        <div class="divider-line"></div>
+      </div>
+      <div class="sponsors-grid reveal">
+        <div class="sponsor-card">
+          <a href="https://www.patt.gov.gr/" target="_blank" rel="noopener"
+            ><img
+              src="img/logo Agkalia_F/png/Agkalia Attikis_logo_1.png"
+              alt="Αγκαλιά της Αττικής"
+              class="sponsor-logo"
+            /><span class="sponsor-label">Αγκαλιά της Αττικής</span></a
+          >
+        </div>
+        <div class="sponsor-card">
+          <a href="https://www.markopoulo.gr/" target="_blank" rel="noopener"
+            ><img
+              src="img/logo_marko.png"
+              alt="Δήμος Μαρκοπούλου"
+              class="sponsor-logo"
+            /><span class="sponsor-label">Δήμος Μαρκοπούλου</span></a
           >
         </div>
       </div>
     </section>
 
-    <!-- GALLERY -->
     <section class="gallery" id="gallery">
       <p class="section-label reveal">Φωτογραφίες</p>
       <h2 class="section-title reveal" style="color: var(--cream)">Στιγμές</h2>
@@ -1341,7 +1327,7 @@
             background: linear-gradient(
               to right,
               transparent,
-              rgba(200, 151, 58, 0.4),
+              rgba(109, 202, 243, 0.4),
               transparent
             );
           "
@@ -1353,13 +1339,12 @@
             background: linear-gradient(
               to right,
               transparent,
-              rgba(200, 151, 58, 0.4),
+              rgba(109, 202, 243, 0.4),
               transparent
             );
           "
         ></div>
       </div>
-
       <div class="gallery-track">
         <div class="gallery-item">
           <div class="gallery-item-bg">🏐</div>
@@ -1406,7 +1391,6 @@
       </div>
     </section>
 
-    <!-- REGISTRATION -->
     <section class="registration" id="registration">
       <p class="section-label" style="color: rgba(245, 237, 214, 0.7)">
         Δήλωσε Συμμετοχή
@@ -1440,34 +1424,18 @@
           "
         ></div>
       </div>
-
       <div class="reg-info">
+        <div class="reg-item"><strong>8</strong><span>Ομάδες</span></div>
         <div class="reg-item">
-          <strong>8</strong>
-          <span>Ομάδες</span>
+          <strong>12</strong><span>Παίκτες/Ομάδα</span>
         </div>
-        <div class="reg-item">
-          <strong>12</strong>
-          <span>Παίκτες/Ομάδα</span>
-        </div>
-        <div class="reg-item">
-          <strong>35+</strong>
-          <span>Min. Ηλικία</span>
-        </div>
-        <div class="reg-item">
-          <strong>2</strong>
-          <span>Μέρες Αγώνων</span>
-        </div>
+        <div class="reg-item"><strong>35+</strong><span>Min. Ηλικία</span></div>
+        <div class="reg-item"><strong>2</strong><span>Μέρες Αγώνων</span></div>
       </div>
-
       <div class="reg-cta">
-        <a
-          href="/cdn-cgi/l/email-protection#3f565159507f5e53534c4b5e4d4956514b5e585a11584d"
-          class="btn-white"
-          >Εγγραφή Ομάδας</a
-        >
+        <a href="registration.html" class="btn-white">Εγγραφή Ομάδας</a>
+        <a href="rules.html" class="btn-white-outline">Κανονισμός</a>
       </div>
-
       <p
         style="
           margin-top: 24px;
@@ -1479,15 +1447,13 @@
       >
         ΓΙΑ ΠΛΗΡΟΦΟΡΙΕΣ:
         <a
-          href="/cdn-cgi/l/email-protection"
-          class="__cf_email__"
-          data-cfemail="773e39313837363b3b24233625213e3923363032593025"
-          >[email&#160;protected]</a
+          href="mailto:info@allstarvintage.gr"
+          style="color: rgba(245, 237, 214, 0.8)"
+          >INFO@ALLSTARVINTAGE.GR</a
         >
       </p>
     </section>
 
-    <!-- CONTACT -->
     <section class="contact" id="contact">
       <div class="contact-inner">
         <p class="section-label reveal">Βρες μας</p>
@@ -1498,7 +1464,6 @@
           <div class="divider-icon">🏐</div>
           <div class="divider-line"></div>
         </div>
-
         <div class="contact-grid">
           <div class="contact-item reveal">
             <span class="contact-icon">📍</span>
@@ -1509,12 +1474,7 @@
             <span class="contact-icon">✉️</span>
             <h4>Email</h4>
             <p>
-              <a
-                href="/cdn-cgi/l/email-protection"
-                class="__cf_email__"
-                data-cfemail="d0b9beb6bf90b1bcbca3a4b1a2a6b9bea4b1b7b5feb7a2"
-                >[email&#160;protected]</a
-              >
+              <a href="mailto:info@allstarvintage.gr">info@allstarvintage.gr</a>
             </p>
           </div>
           <div class="contact-item reveal">
@@ -1526,60 +1486,37 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-logo">All Star Vintage Tournament</div>
-      <div class="footer-domain">allstarvintage.gr</div>
-      <div class="footer-sep"></div>
-      <p class="footer-copy">
-        © 2025 Markopoulo Volleyball All Star Vintage Tournament · Markopoulo,
-        Attica, Greece
-      </p>
+    <footer class="site-footer">
+      <div class="ftr-left"></div>
+      <div class="ftr-right"></div>
+      <a href="https://www.markopoulo.gr/" target="_blank" rel="noopener">
+        <img
+          src="img/logo_marko.png"
+          alt="Δήμος Μαρκοπούλου"
+          class="footer-logo-center"
+        />
+      </a>
     </footer>
 
-    <script
-      data-cfasync="false"
-      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
     <script>
-      // Scroll reveal
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-            }
+            if (entry.isIntersecting) entry.target.classList.add("visible");
           });
         },
         { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
       );
-
       document
         .querySelectorAll(".reveal")
         .forEach((el) => observer.observe(el));
-
-      // Stagger children in grids
       document
-        .querySelectorAll(
-          ".about-grid, .teams-grid, .schedule-grid, .contact-grid",
-        )
+        .querySelectorAll(".about-grid, .schedule-grid, .contact-grid")
         .forEach((grid) => {
           grid.querySelectorAll(".reveal").forEach((child, i) => {
             child.style.transitionDelay = `${i * 0.08}s`;
           });
         });
-
-      // Nav scroll effect
-      const nav = document.querySelector("nav");
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 80) {
-          nav.style.padding = "12px 40px";
-        } else {
-          nav.style.padding = "16px 40px";
-        }
-      });
-
-      // Smooth hover on gallery
       const track = document.querySelector(".gallery-track");
       let isDown = false,
         startX,
@@ -1594,9 +1531,24 @@
       track.addEventListener("mousemove", (e) => {
         if (!isDown) return;
         e.preventDefault();
-        const x = e.pageX - track.offsetLeft;
-        track.scrollLeft = scrollLeft - (x - startX) * 1.5;
+        track.scrollLeft =
+          scrollLeft - (e.pageX - track.offsetLeft - startX) * 1.5;
       });
+      const grid = document.getElementById("teamsGrid");
+      const addCard = document.getElementById("addTeamCard");
+      fetch("/api/teams")
+        .then((r) => r.json())
+        .then((teams) => {
+          teams.forEach((team) => {
+            const card = document.createElement("a");
+            card.href = `team.html?id=${team.id}`;
+            card.className = "team-card reveal";
+            card.innerHTML = `<img class="team-shield" src="${team.logo_path || ""}" alt="${team.name}" onerror="this.style.visibility='hidden'"/><div class="team-name">${team.name}</div><span class="team-city">${team.city || ""}</span>`;
+            grid.insertBefore(card, addCard);
+            observer.observe(card);
+          });
+        })
+        .catch(() => {});
     </script>
   </body>
 </html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Κανονισμός | All Star Vintage Tournament</title>
+<style>
+  @font-face { font-family: 'Bebas Neue'; src: url('fonts/BebasNeue-Regular.ttf'); }
+  @font-face { font-family: 'Barlow Condensed'; src: url('fonts/BarlowCondensed-Regular.ttf'); font-weight: 400; }
+  @font-face { font-family: 'Barlow Condensed'; src: url('fonts/BarlowCondensed-Bold.ttf'); font-weight: 700; }
+  @font-face { font-family: 'Playfair Display'; src: url('fonts/PlayfairDisplay-Regular.ttf'); font-weight: 400; }
+
+  :root {
+    --cream: #EEF6FF;
+    --gold: #6dcaf3;
+    --dark: #0d1f3c;
+    --blue: #1f3464;
+    --sand: #a8d8f0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--cream); font-family: 'Barlow Condensed', sans-serif; color: var(--dark); }
+
+  nav {
+    background: rgba(31,52,100,0.96);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .nav-logo { font-family: 'Bebas Neue'; font-size: 1.4rem; color: var(--gold); letter-spacing: 2px; text-decoration: none; }
+  .nav-back { color: var(--sand); font-size: 0.85rem; letter-spacing: 2px; text-decoration: none; }
+  .nav-back:hover { color: var(--gold); }
+
+  .hero {
+    background: var(--dark);
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-family: 'Bebas Neue';
+    font-size: clamp(3rem, 8vw, 6rem);
+    color: white;
+    letter-spacing: 3px;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-top: 12px;
+  }
+
+  .page { max-width: 800px; margin: 60px auto; padding: 0 24px 80px; }
+
+  .rules-block {
+    background: white;
+    border: 1px solid rgba(109,202,243,0.2);
+    padding: 40px;
+    margin-bottom: 24px;
+  }
+
+  .rules-block h2 {
+    font-family: 'Bebas Neue';
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: var(--blue);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  .rules-block p {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--dark);
+    margin-bottom: 16px;
+    opacity: 0.85;
+  }
+
+  .rules-block ul {
+    list-style: none;
+    margin-bottom: 16px;
+  }
+
+  .rules-block ul li {
+    font-size: 1rem;
+    line-height: 1.9;
+    padding-left: 20px;
+    position: relative;
+    opacity: 0.85;
+  }
+
+  .rules-block ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+  }
+
+  .updated {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: var(--blue);
+    opacity: 0.5;
+    text-align: right;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">ASV · 2026</a>
+  <a href="/" class="nav-back">← Πίσω στην Αρχική</a>
+</nav>
+
+<div class="hero">
+  <h1>Κανονισμός</h1>
+  <p>Προκήρυξη Τουρνουά · 2026</p>
+</div>
+
+<div class="page">
+
+  <div class="rules-block">
+    <h2>Άρθρο 1 — Γενικές Διατάξεις</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+  </div>
+
+  <div class="rules-block">
+    <h2>Άρθρο 2 — Συμμετοχή</h2>
+    <ul>
+      <li>Δικαίωμα συμμετοχής έχουν αθλητές ηλικίας 35 ετών και άνω.</li>
+      <li>Κάθε ομάδα αποτελείται από 8 έως 14 αθλητές.</li>
+      <li>Κάθε αθλητής μπορεί να συμμετέχει σε μία μόνο ομάδα.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      <li>Sed do eiusmod tempor incididunt ut labore et dolore magna.</li>
+    </ul>
+  </div>
+
+  <div class="rules-block">
+    <h2>Άρθρο 3 — Αγωνιστικό Σύστημα</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <ul>
+      <li>Α' Φάση: Αγώνες ομίλων (round robin)</li>
+      <li>Β' Φάση: Ημιτελικοί αγώνες</li>
+      <li>Γ' Φάση: Αγώνας για 3η-4η θέση και Μεγάς Τελικός</li>
+    </ul>
+  </div>
+
+  <div class="rules-block">
+    <h2>Άρθρο 4 — Κανόνες Αγώνα</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </div>
+
+  <div class="rules-block">
+    <h2>Άρθρο 5 — Βραβεύσεις</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <ul>
+      <li>1η θέση: Τρόπαιο + Μετάλλια</li>
+      <li>2η θέση: Τρόπαιο + Μετάλλια</li>
+      <li>3η θέση: Τρόπαιο + Μετάλλια</li>
+      <li>MVP Τουρνουά</li>
+    </ul>
+  </div>
+
+  <p class="updated">Τελευταία ενημέρωση: Απρίλιος 2026</p>
+</div>
+
+</body>
+</html>
