@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Markopoulo Volleyball All Star Vintage Tournament | allstarvintage.gr
-    </title>
+    <title>All Star Vintage Tournament 2026 | allstarvintage.gr</title>
     <style>
       @font-face {
         font-family: "Bebas Neue";
@@ -24,12 +22,6 @@
         src: url("fonts/PlayfairDisplay-Italic.ttf") format("truetype");
         font-weight: 400;
         font-style: italic;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: "Playfair Display";
-        src: url("fonts/PlayfairDisplay-Bold.ttf") format("truetype");
-        font-weight: 700;
         font-display: swap;
       }
       @font-face {
@@ -56,26 +48,18 @@
         font-weight: 700;
         font-display: swap;
       }
-      @font-face {
-        font-family: "Barlow Condensed";
-        src: url("fonts/BarlowCondensed-Black.ttf") format("truetype");
-        font-weight: 900;
-        font-display: swap;
-      }
-    </style>
-    <style>
+
       :root {
-        --cream: #eef6ff;
-        --warm-white: #f5faff;
+        --bg: #eef6ff;
+        --blue: #1f3464;
+        --blue-light: #2a4a7f;
         --gold: #6dcaf3;
         --gold-light: #9adcf7;
-        --dark-brown: #0d1f3c;
-        --brown: #1f3464;
-        --rust: #1f3464;
-        --olive: #2a4a7f;
         --sand: #a8d8f0;
-        --ink: #070f1e;
+        --ink: #0d1f3c;
+        --white: #ffffff;
       }
+
       * {
         margin: 0;
         padding: 0;
@@ -85,22 +69,14 @@
         scroll-behavior: smooth;
       }
       body {
-        background-color: var(--cream);
-        color: var(--dark-brown);
+        background: var(--bg);
+        color: var(--ink);
         font-family: "Barlow Condensed", sans-serif;
         overflow-x: hidden;
-      }
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-        pointer-events: none;
-        z-index: 9999;
-        opacity: 0.6;
+        padding-bottom: 100px;
       }
 
-      /* HEADER */
+      /* ===== HEADER ===== */
       .site-header {
         width: 100%;
         height: 180px;
@@ -134,7 +110,7 @@
       }
       .header-logo-right {
         position: absolute;
-        right: 24px;
+        right: 20px;
         top: 50%;
         transform: translateY(-50%);
         height: 180px;
@@ -143,7 +119,7 @@
         z-index: 2;
       }
 
-      /* FOOTER */
+      /* ===== FOOTER ===== */
       .site-footer {
         width: 100%;
         height: 100px;
@@ -157,13 +133,13 @@
         position: absolute;
         inset: 0;
         background: #ffffff;
-  clip-path: polygon(0 0, 79% 24%, 83% 100%, 0 100%);
+        clip-path: polygon(0 0, 79% 24%, 83% 100%, 0 100%);
       }
       .ftr-right {
         position: absolute;
         inset: 0;
         background: #1f3464;
-  clip-path: polygon(100% 0, 79% 24%, 83% 100%, 100% 100%);
+        clip-path: polygon(100% 0, 79% 24%, 83% 100%, 100% 100%);
       }
       .footer-logo-center {
         position: absolute;
@@ -176,14 +152,14 @@
         z-index: 2;
       }
 
-      /* HERO */
+      /* ===== HERO ===== */
       .hero {
-        min-height: 100vh;
-        background-color: var(--dark-brown);
-        position: relative;
+        min-height: calc(100vh - 250px); /* 180px header + 100px footer */
+        background: var(--cream);
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
         overflow: hidden;
       }
       .hero-bg {
@@ -191,56 +167,35 @@
         inset: 0;
         background:
           radial-gradient(
-            ellipse at 20% 50%,
+            ellipse at 20% 60%,
             rgba(109, 202, 243, 0.15) 0%,
-            transparent 60%
+            transparent 55%
           ),
           radial-gradient(
-            ellipse at 80% 20%,
-            rgba(109, 202, 243, 0.08) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            ellipse at 60% 80%,
-            rgba(31, 52, 100, 0.3) 0%,
+            ellipse at 80% 30%,
+            rgba(31, 52, 100, 0.06) 0%,
             transparent 50%
           );
       }
-      .hero-net {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        width: 2px;
-        background: repeating-linear-gradient(
-          to bottom,
-          rgba(109, 202, 243, 0.4) 0px,
-          rgba(109, 202, 243, 0.4) 8px,
-          transparent 8px,
-          transparent 18px
-        );
-        transform: translateX(-50%);
-        opacity: 0.3;
-      }
       .hero-circle {
         position: absolute;
-        width: 600px;
-        height: 600px;
+        width: 500px;
+        height: 500px;
         border-radius: 50%;
-        border: 1px solid rgba(109, 202, 243, 0.15);
+        border: 1px solid rgba(31, 52, 100, 0.08);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        animation: rotateCircle 40s linear infinite;
+        animation: spin 50s linear infinite;
       }
       .hero-circle::before {
         content: "";
         position: absolute;
-        inset: 40px;
+        inset: 60px;
         border-radius: 50%;
-        border: 1px solid rgba(109, 202, 243, 0.08);
+        border: 1px solid rgba(31, 52, 100, 0.04);
       }
-      @keyframes rotateCircle {
+      @keyframes spin {
         from {
           transform: translate(-50%, -50%) rotate(0deg);
         }
@@ -248,158 +203,135 @@
           transform: translate(-50%, -50%) rotate(360deg);
         }
       }
+
       .hero-content {
         position: relative;
         z-index: 2;
         text-align: center;
-        padding: 120px 20px 60px;
-        max-width: 900px;
+
+        max-width: 800px;
       }
-      .hero-year {
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 300;
-        font-size: 0.9rem;
-        letter-spacing: 6px;
-        color: var(--gold);
+      .hero-tag {
+        display: inline-block;
+        border-color: rgba(31, 52, 100, 0.3);
+        color: var(--blue-light);
+        padding: 5px 18px;
+        margin-bottom: 28px;
+        font-size: 0.7rem;
+        letter-spacing: 5px;
+        color: var(--sand);
         text-transform: uppercase;
-        margin-bottom: 24px;
         opacity: 0;
         animation: fadeUp 0.8s 0.2s forwards;
       }
-      .hero-badge {
-        display: inline-block;
-        border: 1px solid rgba(109, 202, 243, 0.5);
-        padding: 6px 20px;
-        margin-bottom: 32px;
+      .hero-title {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(4.5rem, 14vw, 6rem);
+        line-height: 0.85;
+        color: var(--ink);
+        letter-spacing: 3px;
         opacity: 0;
         animation: fadeUp 0.8s 0.4s forwards;
       }
-      .hero-badge span {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 0.75rem;
-        letter-spacing: 4px;
-        color: var(--sand);
-        text-transform: uppercase;
+      .hero-title .line-gold {
+        color: var(--blue);
+        display: block;
       }
-      .hero-title {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: clamp(4rem, 12vw, 9rem);
-        line-height: 0.88;
-        color: var(--cream);
-        letter-spacing: 2px;
-        margin-bottom: 16px;
+      .hero-title .line-italic {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: clamp(2rem, 6vw, 4rem);
+        color: var(--blue-light);
+        display: block;
+        letter-spacing: 5px;
+        margin-top: 8px;
+      }
+      .hero-meta {
+        margin-top: 28px;
+        font-size: 0.8rem;
+        letter-spacing: 4px;
+        color: var(--blue-light);
+        text-transform: uppercase;
         opacity: 0;
         animation: fadeUp 0.8s 0.6s forwards;
       }
-      .hero-title .accent {
-        color: var(--gold);
-        display: block;
-      }
-      .hero-title .italic {
-        font-family: "Playfair Display", serif;
-        font-style: italic;
-        font-size: clamp(2rem, 6vw, 4.5rem);
-        color: var(--sand);
-        display: block;
-        letter-spacing: 4px;
-        margin-top: 8px;
-      }
-      .hero-sub {
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 300;
-        font-size: 1rem;
-        letter-spacing: 3px;
-        color: var(--sand);
-        text-transform: uppercase;
-        margin: 32px 0;
-        opacity: 0;
-        animation: fadeUp 0.8s 0.8s forwards;
-      }
       .hero-cta {
-        display: inline-flex;
-        gap: 16px;
+        margin-top: 40px;
+        display: flex;
+        gap: 14px;
         flex-wrap: wrap;
         justify-content: center;
         opacity: 0;
-        animation: fadeUp 0.8s 1s forwards;
+        animation: fadeUp 0.8s 0.8s forwards;
       }
-      .btn-primary {
-        background: var(--gold);
-        color: var(--dark-brown);
-        padding: 14px 40px;
-        font-family: "Barlow Condensed", sans-serif;
+      .btn {
+        display: inline-block;
+        padding: 13px 36px;
+        font-family: "Barlow Condensed";
         font-weight: 700;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         letter-spacing: 3px;
         text-transform: uppercase;
         text-decoration: none;
-        border: none;
         cursor: pointer;
+        border: none;
         transition: all 0.2s;
-        display: inline-block;
       }
-      .btn-primary:hover {
+      .btn-solid {
+        background: var(--gold);
+        color: var(--ink);
+      }
+      .btn-solid:hover {
         background: var(--gold-light);
         transform: translateY(-2px);
       }
-      .btn-outline {
+      .btn-ghost {
         background: transparent;
-        color: var(--cream);
-        padding: 14px 40px;
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 700;
-        font-size: 0.9rem;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        text-decoration: none;
-        border: 1px solid rgba(245, 237, 214, 0.4);
-        cursor: pointer;
-        transition: all 0.2s;
-        display: inline-block;
+        color: var(--ink);
+        border: 1px solid rgba(31, 52, 100, 0.3);
       }
-      .btn-outline:hover {
+      .btn-ghost:hover {
         border-color: var(--gold);
-        color: var(--gold);
+        color: var(--blue);
       }
+
       .hero-scroll {
         position: absolute;
-        bottom: 32px;
-        left: 50%;
+        bottom: 0;
+        left: 55%;
         transform: translateX(-50%);
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 8px;
         opacity: 0;
-        animation: fadeUp 0.8s 1.4s forwards;
+        animation: fadeUp 0.8s 1.2s forwards;
       }
       .hero-scroll span {
-        font-size: 0.65rem;
+        font-size: 0.6rem;
         letter-spacing: 3px;
-        color: var(--sand);
+        color: var(--blue-light);
         text-transform: uppercase;
       }
       .scroll-line {
         width: 1px;
-        height: 40px;
+        height: 36px;
         background: linear-gradient(to bottom, var(--gold), transparent);
-        animation: scrollPulse 2s infinite;
+        animation: pulse 2s infinite;
       }
-      @keyframes scrollPulse {
+      @keyframes pulse {
         0%,
         100% {
           opacity: 0.3;
-          transform: scaleY(1);
         }
         50% {
           opacity: 1;
-          transform: scaleY(1.1);
         }
       }
       @keyframes fadeUp {
         from {
           opacity: 0;
-          transform: translateY(30px);
+          transform: translateY(24px);
         }
         to {
           opacity: 1;
@@ -407,12 +339,46 @@
         }
       }
 
+      /* ===== SECTION BASE ===== */
+      .section {
+        padding: 180px 40px;
+      }
+      .section-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .section-eyebrow {
+        font-size: 0.65rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--gold);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+      .section-title {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 12px;
+        color: var(--ink);
+      }
+      .section-sub {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 1rem;
+        color: var(--gold);
+        text-align: center;
+        margin-bottom: 52px;
+      }
       .divider {
         display: flex;
         align-items: center;
-        gap: 16px;
-        margin: 0 auto 48px;
-        max-width: 300px;
+        gap: 14px;
+        max-width: 260px;
+        margin: 0 auto 52px;
       }
       .divider-line {
         flex: 1;
@@ -424,210 +390,26 @@
           transparent
         );
       }
-      .divider-icon {
-        color: var(--gold);
-        font-size: 1.2rem;
-      }
-      section {
-        padding: 100px 40px;
-      }
-      .section-label {
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 600;
-        font-size: 0.7rem;
-        letter-spacing: 5px;
-        color: var(--gold);
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 16px;
-      }
-      .section-title {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: clamp(2.5rem, 6vw, 4.5rem);
-        text-align: center;
-        letter-spacing: 2px;
-        margin-bottom: 16px;
-        line-height: 1;
-      }
-      .section-sub {
-        font-family: "Playfair Display", serif;
-        font-style: italic;
-        font-size: 1.1rem;
-        color: var(--brown);
-        text-align: center;
-        margin-bottom: 64px;
-      }
 
-      .about {
-        background: var(--warm-white);
-        position: relative;
-        overflow: hidden;
-      }
-      .about::before {
-        content: "VINTAGE";
-        position: absolute;
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 20vw;
-        color: rgba(109, 202, 243, 0.04);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        white-space: nowrap;
-        pointer-events: none;
-        letter-spacing: 10px;
-      }
-      .about-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2px;
-        max-width: 1100px;
-        margin: 0 auto;
-      }
-      .about-card {
-        background: var(--cream);
-        padding: 48px 36px;
-        text-align: center;
-        position: relative;
-        transition: transform 0.3s;
-      }
-      .about-card:hover {
-        transform: translateY(-4px);
-      }
-      .about-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: var(--gold);
-        transform: scaleX(0);
-        transition: transform 0.3s;
-      }
-      .about-card:hover::before {
-        transform: scaleX(1);
-      }
-      .card-icon {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        display: block;
-      }
-      .card-num {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 3.5rem;
-        color: var(--gold);
-        line-height: 1;
-        display: block;
-      }
-      .card-label {
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 700;
-        font-size: 0.8rem;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        color: var(--brown);
-        margin-top: 4px;
-        display: block;
-      }
-      .card-text {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 1rem;
-        color: var(--brown);
-        margin-top: 16px;
-        line-height: 1.7;
-        font-weight: 400;
-      }
-
-      .schedule {
-        background: var(--dark-brown);
-        color: var(--cream);
-        position: relative;
-        overflow: hidden;
-      }
-      .schedule .section-title {
-        color: var(--cream);
-      }
-      .schedule .section-sub {
-        color: var(--sand);
-      }
-      .schedule-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-        max-width: 900px;
-        margin: 0 auto;
-      }
-      .schedule-day {
-        border: 1px solid rgba(109, 202, 243, 0.2);
-        padding: 40px;
-        position: relative;
-        transition: border-color 0.3s;
-      }
-      .schedule-day:hover {
-        border-color: var(--gold);
-      }
-      .day-label {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 3rem;
-        color: var(--gold);
-        line-height: 1;
-      }
-      .day-date {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 0.75rem;
-        letter-spacing: 3px;
-        color: var(--sand);
-        text-transform: uppercase;
-        margin-bottom: 24px;
-        display: block;
-      }
-      .schedule-item {
-        display: flex;
-        gap: 16px;
-        margin-bottom: 16px;
-        align-items: flex-start;
-        padding-bottom: 16px;
-        border-bottom: 1px solid rgba(109, 202, 243, 0.1);
-      }
-      .schedule-item:last-child {
-        border-bottom: none;
-        margin-bottom: 0;
-      }
-      .item-time {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 1.2rem;
-        color: var(--gold);
-        min-width: 70px;
-      }
-      .item-desc {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 0.95rem;
-        color: var(--cream);
-        font-weight: 400;
-        line-height: 1.5;
-      }
-
-      .teams {
-        background: var(--cream);
+      /* ===== TEAMS ===== */
+      .teams-section {
+        background: var(--blue-light);
       }
       .teams-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2px;
-        max-width: 1100px;
-        margin: 0 auto;
       }
       .team-card {
-        background: var(--warm-white);
-        padding: 40px 24px;
+        background: var(--white);
+        padding: 36px 20px;
         text-align: center;
-        transition: all 0.3s;
-        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        display: block;
         position: relative;
         overflow: hidden;
-        text-decoration: none;
-        display: block;
-        color: inherit;
+        transition: all 0.3s;
       }
       .team-card::after {
         content: "";
@@ -641,7 +423,7 @@
         transition: transform 0.3s;
       }
       .team-card:hover {
-        background: var(--dark-brown);
+        background: var(--ink);
       }
       .team-card:hover .team-name {
         color: var(--gold);
@@ -653,349 +435,221 @@
         transform: scaleX(1);
       }
       .team-shield {
-        width: 72px;
-        height: 72px;
+        width: 68px;
+        height: 68px;
         object-fit: contain;
-        margin-bottom: 16px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        transition: filter 0.3s;
+        margin: 0 auto 14px;
       }
       .team-name {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 1.3rem;
+        font-family: "Bebas Neue";
+        font-size: 1.2rem;
         letter-spacing: 2px;
+        color: var(--ink);
         transition: color 0.3s;
       }
       .team-city {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         letter-spacing: 3px;
         text-transform: uppercase;
-        color: var(--brown);
+        color: var(--blue-light);
         margin-top: 4px;
-        transition: color 0.3s;
         display: block;
+        transition: color 0.3s;
       }
 
-      .sponsors {
-        background: var(--warm-white);
-        padding: 80px 40px;
-        text-align: center;
+      /* ===== REGISTRATION SECTION ===== */
+      .reg-section {
+        background: var(--blue);
       }
-      .sponsors-grid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 80px;
-        flex-wrap: wrap;
-        margin-top: 48px;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
+      .reg-section .section-title {
+        color: var(--white);
       }
-      .sponsor-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-        padding: 40px 48px;
-        border: 1px solid rgba(109, 202, 243, 0.2);
-        transition:
-          border-color 0.3s,
-          transform 0.3s;
-        background: white;
-      }
-      .sponsor-card:hover {
-        border-color: var(--gold);
-        transform: translateY(-4px);
-      }
-      .sponsor-card a {
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-      }
-      .sponsor-logo {
-        width: 160px;
-        height: 100px;
-        object-fit: contain;
-      }
-      .sponsor-label {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 0.75rem;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        color: var(--brown);
-      }
-
-      .gallery {
-        background: var(--brown);
-        padding: 80px 0;
-      }
-      .gallery .section-title {
-        color: var(--cream);
-        padding: 0 40px;
-      }
-      .gallery .section-label {
-        padding: 0 40px;
-      }
-      .gallery .section-sub {
+      .reg-section .section-sub {
         color: var(--sand);
-        padding: 0 40px;
       }
-      .gallery .divider {
-        margin-bottom: 48px;
-      }
-      .gallery-track {
-        display: flex;
-        gap: 16px;
-        padding: 0 40px;
-        overflow-x: auto;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-        padding-bottom: 8px;
-      }
-      .gallery-track::-webkit-scrollbar {
-        display: none;
-      }
-      .gallery-item {
-        flex: 0 0 280px;
-        height: 340px;
-        background: var(--dark-brown);
-        border: 1px solid rgba(109, 202, 243, 0.2);
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        align-items: flex-end;
-        padding: 24px;
-        transition: border-color 0.3s;
-      }
-      .gallery-item:hover {
-        border-color: var(--gold);
-      }
-      .gallery-item-bg {
-        position: absolute;
-        inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 8rem;
-        opacity: 0.07;
-        transition:
-          opacity 0.3s,
-          transform 0.4s;
-      }
-      .gallery-item:hover .gallery-item-bg {
-        opacity: 0.12;
-        transform: scale(1.1);
-      }
-      .gallery-item-caption {
-        position: relative;
-        z-index: 1;
-      }
-      .gallery-item-caption h4 {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 1.1rem;
-        color: var(--cream);
-        letter-spacing: 1px;
-      }
-      .gallery-item-caption span {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 0.75rem;
-        letter-spacing: 2px;
+      .reg-section .section-eyebrow {
         color: var(--gold);
-        text-transform: uppercase;
       }
-
-      .registration {
-        background: var(--rust);
-        color: var(--cream);
-        text-align: center;
-        padding: 100px 40px;
-        position: relative;
-        overflow: hidden;
-      }
-      .registration::before {
-        content: "2026";
-        position: absolute;
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 30vw;
-        color: rgba(0, 0, 0, 0.1);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        white-space: nowrap;
-        pointer-events: none;
-        letter-spacing: 5px;
-        line-height: 1;
-      }
-      .registration .section-title {
-        color: var(--cream);
-      }
-      .registration .section-sub {
-        color: rgba(245, 237, 214, 0.8);
-      }
-      .registration .divider-line {
+      .reg-section .divider-line {
         background: linear-gradient(
           to right,
           transparent,
-          rgba(245, 237, 214, 0.4),
+          rgba(109, 202, 243, 0.4),
           transparent
         );
       }
-      .registration .divider-icon {
-        color: var(--cream);
+
+      .reg-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+        margin-bottom: 40px;
       }
-      .reg-info {
-        display: flex;
-        justify-content: center;
-        gap: 60px;
-        margin: 48px 0;
-        flex-wrap: wrap;
-      }
-      .reg-item {
+      .reg-stat {
+        background: rgba(255, 255, 255, 0.06);
+        padding: 32px;
         text-align: center;
       }
-      .reg-item strong {
+      .reg-stat strong {
         display: block;
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 2.5rem;
-        color: var(--cream);
+        font-family: "Bebas Neue";
+        font-size: 3.5rem;
+        color: var(--gold);
         line-height: 1;
       }
-      .reg-item span {
-        font-family: "Barlow Condensed", sans-serif;
+      .reg-stat span {
         font-size: 0.75rem;
         letter-spacing: 3px;
         text-transform: uppercase;
-        color: rgba(245, 237, 214, 0.7);
-      }
-      .reg-cta {
-        position: relative;
-        z-index: 1;
-        margin-top: 48px;
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      .btn-white {
-        background: var(--cream);
-        color: var(--rust);
-        padding: 16px 52px;
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 700;
-        font-size: 1rem;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-        transition: all 0.2s;
-        display: inline-block;
-      }
-      .btn-white:hover {
-        background: var(--dark-brown);
-        color: var(--gold);
-        transform: translateY(-2px);
-      }
-      .btn-white-outline {
-        background: transparent;
-        color: var(--cream);
-        padding: 16px 52px;
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 700;
-        font-size: 1rem;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        text-decoration: none;
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        cursor: pointer;
-        transition: all 0.2s;
-        display: inline-block;
-      }
-      .btn-white-outline:hover {
-        border-color: white;
-        background: rgba(255, 255, 255, 0.1);
-      }
-
-      .contact {
-        background: var(--warm-white);
-        padding: 80px 40px;
-      }
-      .contact-inner {
-        max-width: 700px;
-        margin: 0 auto;
-        text-align: center;
-      }
-      .contact-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
-        margin-top: 48px;
-      }
-      .contact-item {
-        padding: 32px 16px;
-        border: 1px solid rgba(109, 202, 243, 0.2);
-        transition: border-color 0.3s;
-      }
-      .contact-item:hover {
-        border-color: var(--gold);
-      }
-      .contact-icon {
-        font-size: 1.8rem;
-        margin-bottom: 12px;
+        color: var(--sand);
+        margin-top: 6px;
         display: block;
       }
-      .contact-item h4 {
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 700;
-        font-size: 0.75rem;
+
+      .reg-more {
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        max-height: 0;
+      }
+      .reg-more.open {
+        max-height: 600px;
+      }
+      .reg-details {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 32px;
+        margin-bottom: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+
+      .reg-detail-label {
+        font-size: 0.65rem;
         letter-spacing: 3px;
         text-transform: uppercase;
         color: var(--gold);
-        margin-bottom: 8px;
+        margin-bottom: 6px;
+        display: block;
       }
-      .contact-item p {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 0.95rem;
-        color: var(--brown);
+      .reg-detail-val {
+        font-size: 1rem;
+        color: var(--white);
         line-height: 1.6;
       }
-      .contact-item a {
-        color: var(--brown);
-        text-decoration: none;
+
+      .reg-cta {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 8px;
       }
-      .contact-item a:hover {
+      .btn-more {
+        background: transparent;
+        color: var(--sand);
+        border: 1px solid rgba(109, 202, 243, 0.3);
+        cursor: pointer;
+      }
+      .btn-more:hover {
+        border-color: var(--gold);
         color: var(--gold);
       }
 
-      .stamp {
-        display: inline-block;
-        border: 3px solid var(--gold);
-        padding: 12px 20px;
-        transform: rotate(-2deg);
-        margin: 24px 0;
-        position: relative;
+      /* ===== RULES SECTION ===== */
+      .rules-section {
+        background: var(--white);
       }
-      .stamp::before {
-        content: "";
-        position: absolute;
-        inset: 4px;
-        border: 1px solid rgba(109, 202, 243, 0.3);
+      .rules-preview {
+        max-width: 700px;
+        margin: 0 auto;
       }
-      .stamp-text {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 1.1rem;
-        letter-spacing: 3px;
+      .rules-article {
+        border-left: 3px solid var(--gold);
+        padding: 20px 24px;
+        margin-bottom: 16px;
+        background: var(--bg);
+        transition: border-color 0.2s;
+      }
+      .rules-article:hover {
+        border-color: var(--blue);
+      }
+      .rules-article h3 {
+        font-family: "Bebas Neue";
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        color: var(--blue);
+        margin-bottom: 6px;
+      }
+      .rules-article p {
+        font-size: 0.95rem;
+        color: var(--blue-light);
+        line-height: 1.7;
+      }
+
+      .rules-more {
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        max-height: 0;
+      }
+      .rules-more.open {
+        max-height: 1000px;
+      }
+      .rules-cta {
+        text-align: center;
+        margin-top: 32px;
+      }
+
+      /* ===== ORGANIZERS ===== */
+      .org-section {
+        background: var(--ink);
+        padding: 64px 40px;
+        text-align: center;
+      }
+      .org-label {
+        font-size: 0.65rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
         color: var(--gold);
+        margin-bottom: 20px;
+        display: block;
       }
+      .org-text {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: clamp(1.2rem, 3vw, 1.8rem);
+        color: var(--white);
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto 8px;
+      }
+      .org-text strong {
+        color: var(--gold);
+        font-style: normal;
+      }
+      .org-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+      .org-logo {
+        height: 60px;
+        width: auto;
+        object-fit: contain;
+        opacity: 0.85;
+        transition: opacity 0.2s;
+      }
+      .org-logo:hover {
+        opacity: 1;
+      }
+
+      /* ===== REVEAL ===== */
       .reveal {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(32px);
         transition:
           opacity 0.7s,
           transform 0.7s;
@@ -1005,17 +659,22 @@
         transform: translateY(0);
       }
 
+      /* ===== RESPONSIVE ===== */
       @media (max-width: 900px) {
+        .hero {
+          min-height: calc(100vh - 180px); /* 180px header + 60px footer */
+          padding: 60px 20px;
+        }
         .site-header {
           height: 90px;
         }
         .header-logo-left {
           height: 60px;
-          left: 16px;
+          left: 12px;
         }
         .header-logo-right {
           height: 60px;
-          right: 16px;
+          right: 12px;
         }
         .site-footer {
           height: 60px;
@@ -1023,38 +682,40 @@
         .footer-logo-center {
           height: 36px;
         }
-      }
-      @media (max-width: 768px) {
-        section {
-          padding: 80px 20px;
-        }
-        .about-grid,
-        .schedule-grid {
-          grid-template-columns: 1fr;
+        body {
+          padding-bottom: 60px;
         }
         .teams-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .reg-grid {
           grid-template-columns: 1fr 1fr;
         }
-        .contact-grid {
+        .reg-details {
           grid-template-columns: 1fr;
         }
-        .reg-info {
-          gap: 32px;
+      }
+      @media (max-width: 600px) {
+        .teams-section {
+          min-height: calc(100vh - 4 0px); /* 180px header + 60px footer */
         }
-        .sponsors-grid {
-          gap: 32px;
+        .hero {
+          min-height: calc(100vh - 130px); /* 180px header + 60px footer */
         }
-        .sponsor-card {
-          padding: 24px;
+        .section {
+          padding: 120px 20px;
         }
-        .sponsor-logo {
-          width: 120px;
-          height: 70px;
+        .reg-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .hero-title {
+          font-size: clamp(3.5rem, 16vw, 6rem);
         }
       }
     </style>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="site-header">
       <div class="hdr-left"></div>
       <div class="hdr-right"></div>
@@ -1074,23 +735,21 @@
       </a>
     </header>
 
-    <section class="hero">
+    <!-- HERO -->
+    <section class="hero" id="top">
       <div class="hero-bg"></div>
-      <div class="hero-net"></div>
       <div class="hero-circle"></div>
       <div class="hero-content">
-        <div class="hero-year">Markopoulo · Αττική · 2026</div>
-        <div class="hero-badge"><span>⬥ Τουρνουά Παλαιμάχων ⬥</span></div>
+        <div class="hero-tag">⬥ Τουρνουά Παλαιμάχων Βόλεϊ ⬥</div>
         <h1 class="hero-title">
           <span>All Star</span>
-          <span class="accent">Vintage</span>
-          <span class="italic">Tournament</span>
+          <span class="line-gold">Vintage</span>
         </h1>
-        <p class="hero-sub">Markopoulo Volleyball · allstarvintage.gr</p>
+        <p class="hero-meta">Μαρκόπουλο · Αττική · 2026</p>
         <div class="hero-cta">
-          <a href="registration.html" class="btn-primary">Εγγραφή Ομάδας</a>
-          <a href="rules.html" class="btn-outline">Κανονισμός</a>
-          <a href="#schedule" class="btn-outline">Πρόγραμμα</a>
+          <a href="registration.html" class="btn btn-solid">Εγγραφή Ομάδας</a>
+          <a href="#teams" class="btn btn-ghost">Ομάδες</a>
+          <a href="#rules" class="btn btn-ghost">Κανονισμοί</a>
         </div>
       </div>
       <div class="hero-scroll">
@@ -1099,393 +758,238 @@
       </div>
     </section>
 
-    <section class="about" id="about">
-      <p class="section-label reveal">Για το Τουρνουά</p>
-      <h2 class="section-title reveal">Η Ιστορία Ξαναρχίζει</h2>
-      <p class="section-sub reveal">
-        Παλαίμαχοι, αναμνήσεις και αγάπη για το βόλεϊ
-      </p>
-      <div class="divider reveal">
-        <div class="divider-line"></div>
-        <div class="divider-icon">🏐</div>
-        <div class="divider-line"></div>
-      </div>
-      <div class="about-grid">
-        <div class="about-card reveal">
-          <span class="card-icon">🏆</span><span class="card-num">1ο</span
-          ><span class="card-label">Επετειακό Τουρνουά</span>
-          <p class="card-text">
-            Η αρχή μιας παράδοσης που θα μείνει. Παλαίμαχοι από όλη την Αττική
-            έρχονται στο Μαρκόπουλο.
-          </p>
-        </div>
-        <div class="about-card reveal">
-          <span class="card-icon">👥</span><span class="card-num">8+</span
-          ><span class="card-label">Ομάδες</span>
-          <p class="card-text">
-            Πρώην αθλητές υψηλού επιπέδου ξαναφοράνε τις φανέλες τους. Το πάθος
-            δεν έχει ηλικία.
-          </p>
-        </div>
-        <div class="about-card reveal">
-          <span class="card-icon">📅</span><span class="card-num">2</span
-          ><span class="card-label">Μέρες Αγώνων</span>
-          <p class="card-text">
-            Ένα αξέχαστο διήμερο γεμάτο αγώνες, συναντήσεις παλιών φίλων και
-            εορτασμό του σπορ.
-          </p>
-        </div>
-      </div>
-      <div style="text-align: center; margin-top: 64px" class="reveal">
-        <div class="stamp">
-          <div class="stamp-text">Markopoulo · Athens · Greece</div>
-        </div>
-        <p
-          style="
-            font-family: &quot;Barlow Condensed&quot;, sans-serif;
-            font-size: 1.1rem;
-            color: var(--brown);
-            max-width: 600px;
-            margin: 24px auto 0;
-            line-height: 1.8;
-          "
-        >
-          Το <strong>All Star Vintage Tournament</strong> είναι μια γιορτή για
-          όσους έζησαν το βόλεϊ με πάθος. Παλαίμαχοι, φίλοι, οικογένειες — όλοι
-          μαζί στο γήπεδο του Μαρκοπούλου για δύο μέρες που δεν θα ξεχαστούν.
+    <!-- TEAMS -->
+    <section class="section teams-section" id="teams">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Συμμετέχουσες</p>
+        <h2 class="section-title reveal">Ομάδες</h2>
+        <p class="section-sub reveal">
+          Δες τις ομάδες που συμμετέχουν στο τουρνουά και δήλωσε την συμμετοχή
+          σας
         </p>
-      </div>
-    </section>
-
-    <section class="schedule" id="schedule">
-      <p class="section-label reveal">Αγωνιστικό</p>
-      <h2 class="section-title reveal">Πρόγραμμα</h2>
-      <p class="section-sub reveal">Κάθε λεπτό μετράει — ξανά</p>
-      <div class="divider reveal">
-        <div class="divider-line"></div>
-        <div class="divider-icon">🏐</div>
-        <div class="divider-line"></div>
-      </div>
-      <div class="schedule-grid">
-        <div class="schedule-day reveal">
-          <div class="day-label">Day 01</div>
-          <span class="day-date">Σάββατο · 2026</span>
-          <div class="schedule-item">
-            <span class="item-time">09:00</span>
-            <div class="item-desc">Άνοιγμα εγκατάστασης & εγγραφές ομάδων</div>
-          </div>
-          <div class="schedule-item">
-            <span class="item-time">10:00</span>
-            <div class="item-desc">
-              Τελετή Έναρξης — Χαιρετισμοί & Επίσημη έναρξη
-            </div>
-          </div>
-          <div class="schedule-item">
-            <span class="item-time">10:30</span>
-            <div class="item-desc">Αγώνες Ομίλων — Α' Γύρος</div>
-          </div>
-          <div class="schedule-item">
-            <span class="item-time">13:30</span>
-            <div class="item-desc">Μεσημεριανό διάλειμμα & Networking</div>
-          </div>
-          <div class="schedule-item">
-            <span class="item-time">15:00</span>
-            <div class="item-desc">Αγώνες Ομίλων — Β' Γύρος</div>
-          </div>
-          <div class="schedule-item">
-            <span class="item-time">19:00</span>
-            <div class="item-desc">Βραδινή εκδήλωση — Αναμνήσεις & Μουσική</div>
-          </div>
+        <div class="divider reveal">
+          <div class="divider-line"></div>
+          <span style="color: var(--gold)">🏐</span>
+          <div class="divider-line"></div>
         </div>
-        <div class="schedule-day reveal">
-          <div class="day-label">Day 02</div>
-          <span class="day-date">Κυριακή · 2026</span>
-          <div class="schedule-item">
-            <span class="item-time">09:00</span>
-            <div class="item-desc">Προθέρμανση & Ημιτελικοί Αγώνες</div>
-          </div>
-          <div class="schedule-item">
-            <span class="item-time">11:00</span>
-            <div class="item-desc">Αγώνας για 3η-4η θέση</div>
-          </div>
-          <div class="schedule-item">
-            <span class="item-time">13:00</span>
-            <div class="item-desc">
-              Μεσημεριανό γεύμα — Παραδοσιακή ψησταριά
-            </div>
-          </div>
-          <div class="schedule-item">
-            <span class="item-time">15:00</span>
-            <div class="item-desc">🏆 ΜΕΓΑΣ ΤΕΛΙΚΟΣ</div>
-          </div>
-          <div class="schedule-item">
-            <span class="item-time">17:00</span>
-            <div class="item-desc">Τελετή Απονομής & Βραβεύσεις</div>
-          </div>
-          <div class="schedule-item">
-            <span class="item-time">18:00</span>
-            <div class="item-desc">
-              Επίσημο Κλείσιμο & Οικογενειακή συγκέντρωση
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="teams" id="teams">
-      <p class="section-label reveal">Συμμετέχουσες</p>
-      <h2 class="section-title reveal">Ομάδες</h2>
-      <p class="section-sub reveal">Γνώριμα ονόματα, νέες ιστορίες</p>
-      <div class="divider reveal">
-        <div class="divider-line"></div>
-        <div class="divider-icon">🏐</div>
-        <div class="divider-line"></div>
-      </div>
-      <div class="teams-grid" id="teamsGrid">
-        <a
-          href="registration.html"
-          class="team-card reveal"
-          id="addTeamCard"
-          style="
-            background: var(--dark-brown);
-            border: 2px dashed rgba(109, 202, 243, 0.3);
-          "
-        >
-          <span
+        <div class="teams-grid" id="teamsGrid">
+          <a
+            href="registration.html"
+            class="team-card reveal"
+            id="addTeamCard"
             style="
-              font-size: 3rem;
-              opacity: 0.4;
-              display: block;
-              margin-bottom: 16px;
+              background: var(--ink);
+              border: 2px dashed rgba(109, 202, 243, 0.25);
             "
-            >➕</span
           >
-          <div class="team-name" style="color: var(--gold)">Η Ομάδα Σου</div>
-          <span class="team-city" style="color: var(--sand)"
-            >Εγγράψου Τώρα</span
+            <span
+              style="
+                font-size: 2.5rem;
+                opacity: 0.35;
+                display: block;
+                margin-bottom: 12px;
+              "
+              >➕</span
+            >
+            <div class="team-name" style="color: var(--gold)">Η Ομάδα Σου</div>
+            <span class="team-city" style="color: var(--sand)"
+              >Εγγράψου Τώρα</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section class="section reg-section" id="registration">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Δήλωσε Συμμετοχή</p>
+        <h2 class="section-title reveal">Εγγραφή Ομάδας</h2>
+        <p class="section-sub reveal">
+          Οι εγγραφές είναι ανοιχτές — οι θέσεις περιορισμένες
+        </p>
+        <div class="divider reveal">
+          <div class="divider-line"></div>
+          <span style="color: var(--gold)">🏐</span>
+          <div class="divider-line"></div>
+        </div>
+
+        <div class="reg-grid reveal">
+          <div class="reg-stat"><strong>12</strong><span>Ομάδες</span></div>
+          <div class="reg-stat">
+            <strong>12</strong><span>Παίκτες/Ομάδα</span>
+          </div>
+          <div class="reg-stat">
+            <strong>30+</strong><span>Min. Ηλικία</span>
+          </div>
+          <div class="reg-stat">
+            <strong>3</strong><span>Μέρες Αγώνων</span>
+          </div>
+        </div>
+
+        <div class="reg-more" id="regMore">
+          <div class="reg-details">
+            <div class="reg-detail-item">
+              <span class="reg-detail-label">Ημερομηνίες</span>
+              <div class="reg-detail-val">
+                Παρασκευή, Σάββατο & Κυριακή · 2026
+              </div>
+              <div class="reg-detail-val">5,6,7 /Ιουνίου · 2026</div>
+            </div>
+            <div class="reg-detail-item">
+              <span class="reg-detail-label">Τοποθεσία</span>
+              <div class="reg-detail-val">Γυμναστήριο Μαρκοπούλου, Αττική</div>
+            </div>
+            <div class="reg-detail-item">
+              <span class="reg-detail-label">Κατηγορία</span>
+              <div class="reg-detail-val">
+                Παλαίμαχοι 35+ ετών, Μικτές ομάδες
+              </div>
+            </div>
+            <div class="reg-detail-item">
+              <span class="reg-detail-label">Επικοινωνία</span>
+              <div class="reg-detail-val">
+                <a
+                  href="mailto:info@allstarvintage.gr"
+                  style="color: var(--gold); text-decoration: none"
+                  >info@allstarvintage.gr</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reg-cta reveal">
+          <button
+            class="btn btn-more"
+            id="regMoreBtn"
+            onclick="
+              toggleMore('regMore', 'regMoreBtn', 'Λιγότερα', 'Περισσότερα')
+            "
           >
+            Περισσότερα
+          </button>
+          <a href="registration.html" class="btn btn-solid">Εγγραφή Τώρα</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RULES -->
+    <section class="section rules-section" id="rules">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Προκήρυξη</p>
+        <h2 class="section-title reveal">Κανονισμός</h2>
+        <p class="section-sub reveal">Όλα όσα χρειάζεται να ξέρεις</p>
+        <div class="divider reveal">
+          <div class="divider-line"></div>
+          <span style="color: var(--gold)">🏐</span>
+          <div class="divider-line"></div>
+        </div>
+
+        <div class="rules-preview">
+          <div class="rules-article reveal">
+            <h3>Άρθρο 1 — Συμμετοχή</h3>
+            <p>
+              Δικαίωμα συμμετοχής έχουν αθλητές ηλικίας 35 ετών και άνω. Κάθε
+              ομάδα αποτελείται από 8 έως 14 αθλητές.
+            </p>
+          </div>
+          <div class="rules-article reveal">
+            <h3>Άρθρο 2 — Αγωνιστικό Σύστημα</h3>
+            <p>
+              Α' Φάση: Αγώνες ομίλων · Β' Φάση: Ημιτελικοί · Γ' Φάση: Τελικός
+              και αγώνας για 3η-4η θέση.
+            </p>
+          </div>
+
+          <div class="rules-more" id="rulesMore">
+            <div class="rules-article">
+              <h3>Άρθρο 3 — Κανόνες Αγώνα</h3>
+              <p>
+                Οι αγώνες διεξάγονται σύμφωνα με τους επίσημους κανονισμούς της
+                FIVB με τροποποιήσεις για παλαίμαχους αθλητές.
+              </p>
+            </div>
+            <div class="rules-article">
+              <h3>Άρθρο 4 — Βραβεύσεις</h3>
+              <p>
+                1η θέση: Τρόπαιο + Μετάλλια · 2η θέση: Τρόπαιο + Μετάλλια · 3η
+                θέση: Τρόπαιο + Μετάλλια · MVP Τουρνουά.
+              </p>
+            </div>
+            <div class="rules-article">
+              <h3>Άρθρο 5 — Γενικές Διατάξεις</h3>
+              <p>
+                Η οργανωτική επιτροπή διατηρεί το δικαίωμα τροποποίησης του
+                κανονισμού. Κάθε τροποποίηση θα ανακοινώνεται έγκαιρα.
+              </p>
+            </div>
+          </div>
+
+          <div class="rules-cta reveal">
+            <button
+              class="btn btn-ghost"
+              style="color: var(--blue); border-color: rgba(31, 52, 100, 0.3)"
+              id="rulesMoreBtn"
+              onclick="
+                toggleMore(
+                  'rulesMore',
+                  'rulesMoreBtn',
+                  'Λιγότερα',
+                  'Περισσότερα',
+                )
+              "
+            >
+              Περισσότερα
+            </button>
+            <a href="rules.html" class="btn btn-solid" style="margin-left: 12px"
+              >Πλήρης Κανονισμός</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORGANIZERS -->
+    <section class="org-section" id="organizers">
+      <span class="org-label">Συνδιοργάνωση</span>
+      <p class="org-text">
+        <strong>Περιφέρεια Αττικής</strong><br />
+        &amp;<br />
+        <strong>Δήμος Μαρκοπούλου Μεσογέας</strong>
+      </p>
+      <p
+        style="
+          font-size: 0.75rem;
+          letter-spacing: 3px;
+          color: rgba(168, 216, 240, 0.5);
+          text-transform: uppercase;
+          margin-top: 16px;
+        "
+      >
+        Στην Αγκαλιά της Αττικής · Πολιτισμός &amp; Αθλητισμός στις Γειτονιές
+        μας
+      </p>
+      <div class="org-logos">
+        <a href="https://www.patt.gov.gr/" target="_blank" rel="noopener">
+          <img
+            src="img/Agkalia_Attikis_logo_4.png"
+            alt="Αγκαλιά της Αττικής"
+            class="org-logo"
+          />
+        </a>
+        <a href="https://www.markopoulo.gr/" target="_blank" rel="noopener">
+          <img
+            src="img/logo_marko.png"
+            alt="Δήμος Μαρκοπούλου"
+            class="org-logo"
+            style="filter: brightness(10)"
+          />
         </a>
       </div>
     </section>
 
-    <section class="sponsors" id="sponsors">
-      <p class="section-label reveal">Στην Αγκαλιά της Αττικής</p>
-      <p class="section-sub reveal">
-        Πολιτισμός · Αθλητισμός στις Γειτονιές μας
-      </p>
-      <p
-        class="section-label reveal"
-        style="
-          font-size: 0.9rem;
-          letter-spacing: 2px;
-          color: var(--brown);
-          font-family: &quot;Barlow Condensed&quot;;
-          text-transform: none;
-          font-style: normal;
-          margin-bottom: 0;
-        "
-      >
-        Με την υποστήριξη της Περιφέρειας Αττικής και του Δήμου Μαρκοπούλου
-      </p>
-      <div class="divider reveal" style="margin-top: 32px">
-        <div class="divider-line"></div>
-        <div class="divider-icon">🏐</div>
-        <div class="divider-line"></div>
-      </div>
-      <div class="sponsors-grid reveal">
-        <div class="sponsor-card">
-          <a href="https://www.patt.gov.gr/" target="_blank" rel="noopener"
-            ><img
-              src="img/logo Agkalia_F/png/Agkalia Attikis_logo_1.png"
-              alt="Αγκαλιά της Αττικής"
-              class="sponsor-logo"
-            /><span class="sponsor-label">Αγκαλιά της Αττικής</span></a
-          >
-        </div>
-        <div class="sponsor-card">
-          <a href="https://www.markopoulo.gr/" target="_blank" rel="noopener"
-            ><img
-              src="img/logo_marko.png"
-              alt="Δήμος Μαρκοπούλου"
-              class="sponsor-logo"
-            /><span class="sponsor-label">Δήμος Μαρκοπούλου</span></a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery" id="gallery">
-      <p class="section-label reveal">Φωτογραφίες</p>
-      <h2 class="section-title reveal" style="color: var(--cream)">Στιγμές</h2>
-      <p class="section-sub reveal" style="color: var(--sand)">
-        Αναμνήσεις που φτιάχνουν ιστορία
-      </p>
-      <div class="divider reveal">
-        <div
-          class="divider-line"
-          style="
-            background: linear-gradient(
-              to right,
-              transparent,
-              rgba(109, 202, 243, 0.4),
-              transparent
-            );
-          "
-        ></div>
-        <div class="divider-icon">🏐</div>
-        <div
-          class="divider-line"
-          style="
-            background: linear-gradient(
-              to right,
-              transparent,
-              rgba(109, 202, 243, 0.4),
-              transparent
-            );
-          "
-        ></div>
-      </div>
-      <div class="gallery-track">
-        <div class="gallery-item">
-          <div class="gallery-item-bg">🏐</div>
-          <div class="gallery-item-caption">
-            <h4>Opening Ceremony</h4>
-            <span>Τελετή Έναρξης</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-item-bg">🤝</div>
-          <div class="gallery-item-caption">
-            <h4>Παλιοί Φίλοι</h4>
-            <span>Reunion Moments</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-item-bg">🏆</div>
-          <div class="gallery-item-caption">
-            <h4>Το Τρόπαιο</h4>
-            <span>Champions</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-item-bg">⚡</div>
-          <div class="gallery-item-caption">
-            <h4>Αγώνας</h4>
-            <span>In Action</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-item-bg">🌅</div>
-          <div class="gallery-item-caption">
-            <h4>Μαρκόπουλο</h4>
-            <span>Our City</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-item-bg">🎉</div>
-          <div class="gallery-item-caption">
-            <h4>Γιορτή</h4>
-            <span>After Party</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="registration" id="registration">
-      <p class="section-label" style="color: rgba(245, 237, 214, 0.7)">
-        Δήλωσε Συμμετοχή
-      </p>
-      <h2 class="section-title">Έλα Κι Εσύ</h2>
-      <p class="section-sub" style="color: rgba(245, 237, 214, 0.8)">
-        Οι εγγραφές είναι ανοιχτές — οι θέσεις περιορισμένες
-      </p>
-      <div class="divider">
-        <div
-          class="divider-line"
-          style="
-            background: linear-gradient(
-              to right,
-              transparent,
-              rgba(245, 237, 214, 0.4),
-              transparent
-            );
-          "
-        ></div>
-        <div class="divider-icon">🏐</div>
-        <div
-          class="divider-line"
-          style="
-            background: linear-gradient(
-              to right,
-              transparent,
-              rgba(245, 237, 214, 0.4),
-              transparent
-            );
-          "
-        ></div>
-      </div>
-      <div class="reg-info">
-        <div class="reg-item"><strong>8</strong><span>Ομάδες</span></div>
-        <div class="reg-item">
-          <strong>12</strong><span>Παίκτες/Ομάδα</span>
-        </div>
-        <div class="reg-item"><strong>35+</strong><span>Min. Ηλικία</span></div>
-        <div class="reg-item"><strong>2</strong><span>Μέρες Αγώνων</span></div>
-      </div>
-      <div class="reg-cta">
-        <a href="registration.html" class="btn-white">Εγγραφή Ομάδας</a>
-        <a href="rules.html" class="btn-white-outline">Κανονισμός</a>
-      </div>
-      <p
-        style="
-          margin-top: 24px;
-          font-family: &quot;Barlow Condensed&quot;, sans-serif;
-          font-size: 0.85rem;
-          letter-spacing: 2px;
-          color: rgba(245, 237, 214, 0.6);
-        "
-      >
-        ΓΙΑ ΠΛΗΡΟΦΟΡΙΕΣ:
-        <a
-          href="mailto:info@allstarvintage.gr"
-          style="color: rgba(245, 237, 214, 0.8)"
-          >INFO@ALLSTARVINTAGE.GR</a
-        >
-      </p>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="contact-inner">
-        <p class="section-label reveal">Βρες μας</p>
-        <h2 class="section-title reveal">Επικοινωνία</h2>
-        <p class="section-sub reveal">Είμαστε εδώ για οποιαδήποτε απορία</p>
-        <div class="divider reveal">
-          <div class="divider-line"></div>
-          <div class="divider-icon">🏐</div>
-          <div class="divider-line"></div>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-item reveal">
-            <span class="contact-icon">📍</span>
-            <h4>Τοποθεσία</h4>
-            <p>Γυμναστήριο Μαρκοπούλου<br />Μαρκόπουλο, Αττική</p>
-          </div>
-          <div class="contact-item reveal">
-            <span class="contact-icon">✉️</span>
-            <h4>Email</h4>
-            <p>
-              <a href="mailto:info@allstarvintage.gr">info@allstarvintage.gr</a>
-            </p>
-          </div>
-          <div class="contact-item reveal">
-            <span class="contact-icon">🌐</span>
-            <h4>Website</h4>
-            <p>allstarvintage.gr</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="ftr-left"></div>
       <div class="ftr-right"></div>
@@ -1499,41 +1003,25 @@
     </footer>
 
     <script>
+      function toggleMore(contentId, btnId, openText, closedText) {
+        const el = document.getElementById(contentId);
+        const btn = document.getElementById(btnId);
+        el.classList.toggle("open");
+        btn.textContent = el.classList.contains("open") ? openText : closedText;
+      }
+
       const observer = new IntersectionObserver(
         (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) entry.target.classList.add("visible");
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("visible");
           });
         },
-        { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
+        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
       );
       document
         .querySelectorAll(".reveal")
         .forEach((el) => observer.observe(el));
-      document
-        .querySelectorAll(".about-grid, .schedule-grid, .contact-grid")
-        .forEach((grid) => {
-          grid.querySelectorAll(".reveal").forEach((child, i) => {
-            child.style.transitionDelay = `${i * 0.08}s`;
-          });
-        });
-      const track = document.querySelector(".gallery-track");
-      let isDown = false,
-        startX,
-        scrollLeft;
-      track.addEventListener("mousedown", (e) => {
-        isDown = true;
-        startX = e.pageX - track.offsetLeft;
-        scrollLeft = track.scrollLeft;
-      });
-      track.addEventListener("mouseleave", () => (isDown = false));
-      track.addEventListener("mouseup", () => (isDown = false));
-      track.addEventListener("mousemove", (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        track.scrollLeft =
-          scrollLeft - (e.pageX - track.offsetLeft - startX) * 1.5;
-      });
+
       const grid = document.getElementById("teamsGrid");
       const addCard = document.getElementById("addTeamCard");
       fetch("/api/teams")
