@@ -37,6 +37,6 @@ class ContactController extends Controller
             note: $request->message ?? ''
         ));
 
-        return back()->with('success', 'Η δήλωσή σας στάλθηκε επιτυχώς! Θα επικοινωνήσουμε μαζί σας σύντομα. 🏐');
+       return redirect()->route('contact.index')->with('success', 'Η δήλωσή σας στάλθηκε επιτυχώς! Θα επικοινωνήσουμε μαζί σας σύντομα. 🏐');
     }
 }
