@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+public function up(): void
+{
+    // SQLite δεν υποστηρίζει ALTER COLUMN για enum
+    // Οπότε αλλάζουμε σε string
+    Schema::table('game_matches', function (Blueprint $table) {
+        $table->string('round')->default('group')->change();
+    });
+}
+
+public function down(): void
+{
+    Schema::table('game_matches', function (Blueprint $table) {
+        $table->string('round')->default('group')->change();
+    });
+    }
+};
