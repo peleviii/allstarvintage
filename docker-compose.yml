@@ -1,70 +1,63 @@
 services:
-  # Nginx - Frontend
-  web:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: allstarvintage
+    container_name: allstarvintage_app
     restart: unless-stopped
-    ports:
-      - "8081:80"
     volumes:
-      - ./index.html:/usr/share/nginx/html/index.html
-      - ./rules.html:/usr/share/nginx/html/rules.html
-      - ./fonts:/usr/share/nginx/html/fonts
-      - ./img:/usr/share/nginx/html/img
-      - ./uploads:/usr/share/nginx/html/uploads
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    depends_on:
-      - api
-    networks:
-      - internal
-
-  # Node.js API
-  api:
-    build:
-      context: ./api
-      dockerfile: Dockerfile
-    container_name: allstarvintage_api
-    restart: unless-stopped
-    environment:
-      - DB_HOST=db
-      - DB_PORT=5432
-      - DB_NAME=allstarvintage
-      - DB_USER=avuser
-      - DB_PASS=avpass2026
-      - PORT=3000
-      - UPLOAD_DIR=/uploads
-    volumes:
-      - ./uploads:/uploads
+      - .:/var/www/html
+      - ./storage:/var/www/html/storage
     depends_on:
       db:
         condition: service_healthy
     networks:
       - internal
+    environment:
+      - APP_ENV=production
+      - APP_KEY=${APP_KEY}
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=allstarvintage
+      - DB_USERNAME=avuser
+      - DB_PASSWORD=avpass2026
 
-  # PostgreSQL
+  web:
+    image: nginx:alpine
+    container_name: allstarvintage_web
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    volumes:
+      - .:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - app
+    networks:
+      - internal
+
   db:
-    image: postgres:16-alpine
+    image: mysql:8.0
     container_name: allstarvintage_db
     restart: unless-stopped
     environment:
-      - POSTGRES_DB=allstarvintage
-      - POSTGRES_USER=avuser
-      - POSTGRES_PASSWORD=avpass2026
+      MYSQL_DATABASE: allstarvintage
+      MYSQL_USER: avuser
+      MYSQL_PASSWORD: avpass2026
+      MYSQL_ROOT_PASSWORD: rootpass2026
     volumes:
-      - pgdata:/var/lib/postgresql/data
-      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - mysqldata:/var/lib/mysql
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U avuser -d allstarvintage"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 5s
       timeout: 5s
-      retries: 5
+      retries: 10
     networks:
       - internal
 
 volumes:
-  pgdata:
+  mysqldata:
 
 networks:
   internal:
