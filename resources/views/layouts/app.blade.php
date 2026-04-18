@@ -9,6 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="All Star Vintage Tournament">
+
+    <meta property="og:description" content="Το καλύτερο τουρνουά vintage volleyball στο Μαρκόπουλο. 5-7 Ιουνίου 2026!">
+
+    <meta property="og:image" content="{{ asset('images/logo.png') }}">
+
+    <meta property="og:url" content="{{ url()->current() }}">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:locale" content="el_GR">
+
+    <!-- Twitter Card -->
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="All Star Vintage Tournament">
+
+    <meta name="twitter:description" content="Το καλύτερο τουρνουά vintage volleyball στο Μαρκόπουλο. 5-7 Ιουνίου 2026!">
+
+    <meta name="twitter:image" content="{{ asset('images/logo.png') }}">
 </head>
 
 <body class="bg-gray-50 font-sans flex flex-col min-h-screen">
@@ -31,7 +54,7 @@
                 <a href="/omades" class="text-white hover:text-[#1f3464] transition">Ομάδες</a>
                 <a href="/vathmologia" class="text-white hover:text-[#1f3464] transition">Βαθμολογία</a>
                 <a href="/epikoinonia" class="text-white hover:text-[#1f3464] transition">Επικοινωνία</a>
-             
+
             </nav>
 
             <!-- Mobile hamburger -->
@@ -50,7 +73,7 @@
             <a href="/omades" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Ομάδες</a>
             <a href="/vathmologia" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Βαθμολογία</a>
             <a href="/epikoinonia" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Επικοινωνία</a>
-           
+
         </div>
     </header>
 
