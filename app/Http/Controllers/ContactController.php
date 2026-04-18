@@ -29,7 +29,7 @@ class ContactController extends Controller
             'phone.required'       => 'Το τηλέφωνο είναι υποχρεωτικό.',
         ]);
 
-        Mail::to('info@allstarvintage.gr')->send(new ContactFormMail(
+        Mail::to('peleviii@hotmail.com')->send(new ContactFormMail(
             teamName: $request->team_name,
             responsible: $request->responsible,
             email: $request->email,
