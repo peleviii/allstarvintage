@@ -13,7 +13,7 @@
 
     <meta property="og:title" content="All Star Vintage Tournament">
 
-    <meta property="og:description" content="Το καλύτερο τουρνουά vintage volleyball στο Μαρκόπουλο. 5-7 Ιουνίου 2026!">
+    <meta property="og:description" content="Το καλύτερο τουρνουά vintage volley στο Μαρκόπουλο. 5-7 Ιουνίου 2026!">
 
     <meta property="og:image" content="{{ asset('images/logo.png') }}">
 
@@ -29,7 +29,7 @@
 
     <meta name="twitter:title" content="All Star Vintage Tournament">
 
-    <meta name="twitter:description" content="Το καλύτερο τουρνουά vintage volleyball στο Μαρκόπουλο. 5-7 Ιουνίου 2026!">
+    <meta name="twitter:description" content="Το καλύτερο τουρνουά vintage volley στο Μαρκόπουλο. 5-7 Ιουνίου 2026!">
 
     <meta name="twitter:image" content="{{ asset('images/logo.png') }}">
 </head>
