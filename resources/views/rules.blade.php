@@ -23,6 +23,7 @@
         <div class="bg-white rounded-xl border border-gray-200 p-6">
             <h2 class="font-medium text-[#1a3a6b] text-base mb-3 pb-2 border-b border-[#d4a017]">Άρθρο 2 — Δικαίωμα Συμμετοχής</h2>
             <p class="text-sm text-gray-700 leading-relaxed">Δικαίωμα συμμετοχής έχουν όλοι όσοι αγαπούν το βόλεϊ! Σωματεία, παρέες, εταιρείες, δήμοι — όλοι ευπρόσδεκτοι με μία ή περισσότερες ομάδες. Οι ομάδες είναι μεικτές με υποχρεωτική σύνθεση <strong>3 άνδρες και 3 γυναίκες</strong> στον αγωνιστικό χώρο.</p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2">Δηλώσεις συμμετοχής έως <strong>25 Μαΐου 2026</strong>.</p>
             <p class="text-sm text-gray-700 leading-relaxed mt-2">Η κλήρωση θα πραγματοποιηθεί τη <strong>Δευτέρα 1 Ιουνίου 2026 στις 12:00</strong>. Οι αγώνες θα διεξαχθούν το τριήμερο <strong>5, 6 και 7 Ιουνίου 2026</strong> στο Μαρκόπουλο Αττικής.</p>
             <p class="text-sm text-[#1a3a6b] font-medium mt-3">✅ Κόστος συμμετοχής: Δωρεάν</p>
         </div>
@@ -42,9 +43,22 @@
             </div>
         </div>
 
+        <div class="bg-white rounded-xl border border-gray-200 p-6">
+    <h2 class="font-medium text-[#1a3a6b] text-base mb-3 pb-2 border-b border-[#d4a017]">Άρθρο 4 — Διαιτησία & Συμπεριφορά</h2>
+    <div class="text-sm text-gray-700 leading-relaxed space-y-2">
+        <p>Οι αγώνες του τουρνουά θα διεξαχθούν με <strong>επίσημους διαιτητές</strong> από τα εθνικά πρωταθλήματα βόλεϊ.</p>
+        <p>Οι αποφάσεις των διαιτητών είναι <strong>τελεσίδικες και αμετάκλητες</strong>. Παράπονα εντός ή εκτός γηπέδου δεν γίνονται αποδεκτά.</p>
+        <div class="bg-blue-50 rounded-lg p-3 mt-2">
+            <p class="text-xs text-blue-800 font-medium mb-1">Υποχρεώσεις αθλητών & ομάδων:</p>
+            <p class="text-xs text-blue-700">• Υποχρεωτική χρήση <strong>φανελών με αριθμούς</strong> για την ορθή εφαρμογή των κανονισμών.</p>
+            <p class="text-xs text-blue-700 mt-1">• Απαγορεύεται κάθε μορφή <strong>αντιαθλητικής συμπεριφοράς</strong> απέναντι στους διαιτητές, αντιπάλους και θεατές.</p>
+            <p class="text-xs text-blue-700 mt-1">• Η οργανωτική επιτροπή διατηρεί το δικαίωμα <strong>αποκλεισμού αθλητή ή ομάδας</strong> σε περίπτωση παραβίασης των κανόνων συμπεριφοράς.</p>
+        </div>
+    </div>
+</div>
         <!-- Άρθρο 6 -->
         <div class="bg-white rounded-xl border border-gray-200 p-6">
-            <h2 class="font-medium text-[#1a3a6b] text-base mb-3 pb-2 border-b border-[#d4a017]">Άρθρο 4 — Βαθμολογία</h2>
+            <h2 class="font-medium text-[#1a3a6b] text-base mb-3 pb-2 border-b border-[#d4a017]">Άρθρο 5 — Βαθμολογία</h2>
             <p class="text-sm text-gray-700 mb-3">Ως προσέλευση θεωρείται η παρουσία στο γήπεδο τουλάχιστον <strong>6 αθλητών/τριών</strong> με αθλητική περιβολή.</p>
             <div class="space-y-2">
                 <div class="flex items-center gap-3 bg-green-50 rounded-lg px-4 py-2">
@@ -70,7 +84,7 @@
 
         <!-- Άρθρο 13 -->
         <div class="bg-white rounded-xl border border-gray-200 p-6">
-            <h2 class="font-medium text-[#1a3a6b] text-base mb-3 pb-2 border-b border-[#d4a017]">Άρθρο 5 — Έπαθλα</h2>
+            <h2 class="font-medium text-[#1a3a6b] text-base mb-3 pb-2 border-b border-[#d4a017]">Άρθρο 6 — Έπαθλα</h2>
             <p class="text-sm text-gray-700 leading-relaxed">Στις <strong>τρεις πρώτες θέσεις</strong> θα απονεμηθούν Κύπελλα και μετάλλια.
             </p>
             <div class="bg-amber-100 rounded-lg p-3 mt-2">
@@ -86,7 +100,7 @@
 
         <!-- Άρθρο 14 -->
         <div class="bg-white rounded-xl border border-gray-200 p-6">
-            <h2 class="font-medium text-[#1a3a6b] text-base mb-3 pb-2 border-b border-[#d4a017]">Άρθρο 6 — Σύνθεση Πάγκου & Τεχνικές Λεπτομέρειες</h2>
+            <h2 class="font-medium text-[#1a3a6b] text-base mb-3 pb-2 border-b border-[#d4a017]">Άρθρο 7 — Σύνθεση Πάγκου & Τεχνικές Λεπτομέρειες</h2>
             <div class="text-sm text-gray-700 space-y-2">
                 <p>Στον πάγκο κάθε ομάδας επιτρέπεται η παρουσία <strong>έως 5 ατόμων</strong> (προπονητής, βοηθός, φυσιοθεραπευτής/γιατρός, έφορος, φροντιστής/στατιστικολόγος).</p>
                 <div class="grid grid-cols-2 gap-3 mt-3">

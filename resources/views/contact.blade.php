@@ -86,6 +86,7 @@
     <div class="mt-6 bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm text-blue-800">
         <p class="font-medium mb-1">📞 Επικοινωνία</p>
         <p>Email: <a href="mailto:info@allstarvintage.gr" class="underline">info@allstarvintage.gr</a></p>
+        <p>Τηλέφωνο: <a href="tel:+306989489777" class="underline">698 948 9777</a></p>
     </div>
 
 </div>
