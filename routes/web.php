@@ -47,6 +47,7 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/teams/{team}/edit', [TeamAdminController::class, 'edit'])->name('teams.edit');
     Route::patch('/teams/{team}', [TeamAdminController::class, 'update'])->name('teams.update');
     Route::post('/teams/{team}/players', [TeamAdminController::class, 'storePlayer'])->name('teams.players.store');
+    Route::patch('/players/{player}', [TeamAdminController::class, 'updatePlayer'])->name('players.update');
     Route::delete('/players/{player}', [TeamAdminController::class, 'destroyPlayer'])->name('players.destroy');
     Route::delete('/teams/{team}/logo', [TeamAdminController::class, 'destroyLogo'])->name('teams.logo.destroy');
     Route::delete('/teams/{team}/photo', [TeamAdminController::class, 'destroyPhoto'])->name('teams.photo.destroy');

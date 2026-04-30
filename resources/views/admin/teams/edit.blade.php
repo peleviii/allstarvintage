@@ -79,7 +79,7 @@
             </thead>
             <tbody>
                 @foreach($team->players->sortBy('number') as $i => $player)
-                <tr class="border-b border-gray-100 last:border-0 {{ $i % 2 === 0 ? 'bg-white' : 'bg-gray-50' }}">
+                <tr class="border-b border-gray-100 last:border-0 {{ $i % 2 === 0 ? 'bg-white' : 'bg-gray-50' }} player-row-{{ $player->id }}" id="display-{{ $player->id }}">
                     <td class="px-4 py-2 text-center font-bold text-[#2563eb]">{{ $player->number }}</td>
                     <td class="px-4 py-2 text-gray-800">{{ $player->name }}</td>
                     <td class="px-4 py-2 text-center">
@@ -89,12 +89,45 @@
                         <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full">Γυναίκα</span>
                         @endif
                     </td>
-                    <td class="px-4 py-2 text-center">
+                    <td class="px-4 py-2 text-center space-x-1">
+                        <button type="button" onclick="editPlayer('{{ $player->id }}')" class="text-[#2563eb] hover:text-[#1a3a6b] text-xs font-medium">Επεξεργασία</button>
                         <form action="{{ route('admin.players.destroy', $player) }}" method="POST"
-                            onsubmit="return confirm('Διαγραφή παίκτη;')">
+                            class="inline" onsubmit="return confirm('Διαγραφή παίκτη;')">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="text-red-500 hover:text-red-700 text-xs">Διαγραφή</button>
+                        </form>
+                    </td>
+                </tr>
+                <!-- Edit Player Form (Hidden) -->
+                <tr class="hidden edit-row-{{ $player->id }}" id="edit-{{ $player->id }}">
+                    <td colspan="4" class="px-4 py-3 bg-blue-50">
+                        <form action="{{ route('admin.players.update', $player) }}" method="POST" class="space-y-2">
+                            @csrf
+                            @method('PATCH')
+                            <div class="grid grid-cols-3 gap-3">
+                                <div>
+                                    <label class="block text-xs font-medium text-gray-700 mb-1">Ονοματεπώνυμο</label>
+                                    <input type="text" name="name" value="{{ $player->name }}"
+                                        class="w-full border border-gray-200 rounded px-2 py-1 text-xs focus:outline-none focus:border-[#2563eb]">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-gray-700 mb-1">Αριθμός</label>
+                                    <input type="number" name="number" value="{{ $player->number }}" min="1" max="99"
+                                        class="w-full border border-gray-200 rounded px-2 py-1 text-xs focus:outline-none focus:border-[#2563eb]">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-gray-700 mb-1">Φύλο</label>
+                                    <select name="gender" class="w-full border border-gray-200 rounded px-2 py-1 text-xs focus:outline-none focus:border-[#2563eb]">
+                                        <option value="Α" {{ $player->gender === 'Α' ? 'selected' : '' }}>Άνδρας</option>
+                                        <option value="Γ" {{ $player->gender === 'Γ' ? 'selected' : '' }}>Γυναίκα</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex gap-2">
+                                <button type="submit" class="bg-[#2563eb] text-white px-3 py-1 rounded text-xs hover:bg-[#1a3a6b] transition">Αποθήκευση</button>
+                                <button type="button" onclick="cancelEdit('{{ $player->id }}')" class="bg-gray-300 text-gray-700 px-3 py-1 rounded text-xs hover:bg-gray-400 transition">Ακύρωση</button>
+                            </div>
                         </form>
                     </td>
                 </tr>
@@ -134,4 +167,16 @@
     </div>
 
 </div>
+
+<script>
+function editPlayer(playerId) {
+    document.getElementById('display-' + playerId).classList.add('hidden');
+    document.getElementById('edit-' + playerId).classList.remove('hidden');
+}
+
+function cancelEdit(playerId) {
+    document.getElementById('display-' + playerId).classList.remove('hidden');
+    document.getElementById('edit-' + playerId).classList.add('hidden');
+}
+</script>
 @endsection

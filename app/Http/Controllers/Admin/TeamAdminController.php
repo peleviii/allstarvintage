@@ -76,6 +76,18 @@ class TeamAdminController extends Controller
         return back()->with('success', 'Ο παίκτης προστέθηκε!');
     }
 
+    public function updatePlayer(Request $request, Player $player)
+    {
+        $request->validate([
+            'name'   => 'required|string|max:255',
+            'number' => 'required|integer|min:1|max:99',
+            'gender' => 'required|in:Α,Γ',
+        ]);
+
+        $player->update($request->only('name', 'number', 'gender'));
+
+        return back()->with('success', 'Ο παίκτης ενημερώθηκε!');
+    }
     public function destroyPlayer(Player $player)
     {
         $player->delete();
