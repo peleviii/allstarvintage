@@ -22,7 +22,9 @@ services:
       - DB_DATABASE=allstarvintage
       - DB_USERNAME=avuser
       - DB_PASSWORD=avpass2026
-
+    ports:
+        - "5173:5173"
+        
   web:
     image: nginx:alpine
     container_name: allstarvintage_web

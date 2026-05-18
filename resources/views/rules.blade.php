@@ -136,11 +136,11 @@
 
         </div>
 
-        <div class="border-t border-[#d4a017]/30 pt-6 mt-8 text-center">
+        <!-- <div class="border-t border-[#d4a017]/30 pt-6 mt-8 text-center">
             <a href="/epikoinonia" class="inline-block bg-[#1a3a6b] text-white px-8 py-3 rounded-xl font-medium text-sm hover:bg-[#2563eb] transition mb-8">
                 🏐 Δήλωσε την ομάδα σου!
             </a>
-        </div>
+        </div> -->
 
     </div>
     @endsection

@@ -4,95 +4,81 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Team;
-use App\Models\Player;
 use App\Models\GameMatch;
 
 class TournamentSeeder extends Seeder
 {
     public function run(): void
     {
-        $teamNames = [
-            'A' => ['Ομάδα A1', 'Ομάδα A2', 'Ομάδα A3'],
-            'B' => ['Ομάδα B1', 'Ομάδα B2', 'Ομάδα B3'],
-            'C' => ['Ομάδα C1', 'Ομάδα C2', 'Ομάδα C3'],
-            'D' => ['Ομάδα D1', 'Ομάδα D2', 'Ομάδα D3'],
+        // ΟΜΑΔΕΣ
+        $teams = [
+            ['name' => 'Sharks',    'group' => 'A'],
+            ['name' => 'Maniacs',   'group' => 'A'],
+            ['name' => 'Kotinos',   'group' => 'A'],
+            ['name' => 'AOM1',      'group' => 'B'],
+            ['name' => 'Galatsi',   'group' => 'B'],
+            ['name' => 'Itea',      'group' => 'B'],
+            ['name' => 'Zografou',  'group' => 'C'],
+            ['name' => 'AOM2',      'group' => 'C'],
+            ['name' => 'Falireas',  'group' => 'C'],
+            ['name' => 'Gerakas',   'group' => 'D'],
+            ['name' => 'Titanes',   'group' => 'D'],
+            ['name' => 'Astegoi',   'group' => 'D'],
         ];
 
-        foreach ($teamNames as $group => $names) {
-            foreach ($names as $name) {
-                Team::create(['name' => $name, 'group' => $group]);
-            }
+        foreach ($teams as $t) {
+            Team::create($t);
         }
 
-        $teams = Team::orderBy('id')->get()->keyBy('name');
+        $t = Team::all()->keyBy('name');
 
-        // ΠΑΡΑΣΚΕΥΗ — Φάση Ομίλων
-        $groupMatches = [
-            ['Ομάδα A1', 'Ομάδα A2', '1', '18:30', 'Αγώνας 1 — Όμιλος Α'],
-            ['Ομάδα B1', 'Ομάδα B2', '1', '19:30', 'Αγώνας 2 — Όμιλος Β'],
-            ['Ομάδα C1', 'Ομάδα C2', '1', '20:30', 'Αγώνας 3 — Όμιλος Γ'],
-            ['Ομάδα D1', 'Ομάδα D2', '1', '21:30', 'Αγώνας 4 — Όμιλος Δ'],
-            ['Ομάδα A1', 'Ομάδα A3', '2', '08:00', 'Αγώνας 5 — Όμιλος Α'],
-            ['Ομάδα B1', 'Ομάδα B3', '2', '09:00', 'Αγώνας 6 — Όμιλος Β'],
-            ['Ομάδα C1', 'Ομάδα C3', '2', '10:00', 'Αγώνας 7 — Όμιλος Γ'],
-            ['Ομάδα D1', 'Ομάδα D3', '2', '11:00', 'Αγώνας 8 — Όμιλος Δ'],
-            ['Ομάδα A2', 'Ομάδα A3', '2', '12:00', 'Αγώνας 9 — Όμιλος Α'],
-            ['Ομάδα B2', 'Ομάδα B3', '2', '13:00', 'Αγώνας 10 — Όμιλος Β'],
-            ['Ομάδα C2', 'Ομάδα C3', '2', '14:00', 'Αγώνας 11 — Όμιλος Γ'],
-            ['Ομάδα D2', 'Ομάδα D3', '2', '15:00', 'Αγώνας 12 — Όμιλος Δ'],
+        // ΑΓΩΝΕΣ
+        $matches = [
+            // ΠΑΡΑΣΚΕΥΗ - Όμιλοι
+            ['day' => 1, 'match_time' => '18:00', 'round' => 'group', 'home' => 'Sharks',   'away' => 'Maniacs'],
+            ['day' => 1, 'match_time' => '19:15', 'round' => 'group', 'home' => 'AOM1',     'away' => 'Galatsi'],
+            ['day' => 1, 'match_time' => '20:30', 'round' => 'group', 'home' => 'Zografou', 'away' => 'AOM2'],
+            ['day' => 1, 'match_time' => '21:45', 'round' => 'group', 'home' => 'Gerakas',  'away' => 'Titanes'],
+
+            // ΣΑΒΒΑΤΟ - Όμιλοι
+            ['day' => 2, 'match_time' => '08:30', 'round' => 'group', 'home' => 'Sharks',   'away' => 'Kotinos'],
+            ['day' => 2, 'match_time' => '09:45', 'round' => 'group', 'home' => 'AOM1',     'away' => 'Itea'],
+            ['day' => 2, 'match_time' => '11:00', 'round' => 'group', 'home' => 'Zografou', 'away' => 'Falireas'],
+            ['day' => 2, 'match_time' => '12:15', 'round' => 'group', 'home' => 'Gerakas',  'away' => 'Astegoi'],
+            ['day' => 2, 'match_time' => '13:30', 'round' => 'group', 'home' => 'Maniacs',  'away' => 'Kotinos'],
+            ['day' => 2, 'match_time' => '14:45', 'round' => 'group', 'home' => 'Galatsi',  'away' => 'Itea'],
+            ['day' => 2, 'match_time' => '16:00', 'round' => 'group', 'home' => 'AOM2',     'away' => 'Falireas'],
+            ['day' => 2, 'match_time' => '17:15', 'round' => 'group', 'home' => 'Titanes',  'away' => 'Astegoi'],
+
+            // ΣΑΒΒΑΤΟ - Προημιτελικοί
+            ['day' => 2, 'match_time' => '18:30', 'round' => 'quarterfinal', 'match_label' => 'Προημιτελικός 1', 'home' => null, 'away' => null],
+            ['day' => 2, 'match_time' => '19:45', 'round' => 'quarterfinal', 'match_label' => 'Προημιτελικός 2', 'home' => null, 'away' => null],
+            ['day' => 2, 'match_time' => '21:00', 'round' => 'quarterfinal', 'match_label' => 'Προημιτελικός 3', 'home' => null, 'away' => null],
+            ['day' => 2, 'match_time' => '22:15', 'round' => 'quarterfinal', 'match_label' => 'Προημιτελικός 4', 'home' => null, 'away' => null],
+
+            // ΚΥΡΙΑΚΗ
+            ['day' => 3, 'match_time' => '9:00', 'round' => 'seventh_place', 'match_label' => 'Κατάταξη 7η-8η', 'home' => null, 'away' => null],
+            ['day' => 3, 'match_time' => '10:15', 'round' => 'fifth_place',  'match_label' => 'Κατάταξη 5η-6η', 'home' => null, 'away' => null],
+            ['day' => 3, 'match_time' => '11:30', 'round' => 'semifinal',    'match_label' => 'Ημιτελικός 1',  'home' => null, 'away' => null],
+            ['day' => 3, 'match_time' => '12:45', 'round' => 'semifinal',    'match_label' => 'Ημιτελικός 2',  'home' => null, 'away' => null],
+            ['day' => 3, 'match_time' => '14:00', 'round' => 'event', 'match_label' => 'Αποκλ. Ομίλου Α vs Αποκλ. Ομίλου Β', 'home' => null, 'away' => null],
+            ['day' => 3, 'match_time' => '15:15', 'round' => 'event', 'match_label' => 'Αποκλ. Ομίλου Γ vs Αποκλ. Ομίλου Δ', 'home' => null, 'away' => null],
+            ['day' => 3, 'match_time' => '16:30', 'round' => 'event', 'match_label' => 'Νικητής vs Νικητής', 'home' => null, 'away' => null],
+
+            ['day' => 3, 'match_time' => '17:45', 'round' => 'third_place',  'match_label' => 'Μικρός Τελικός', 'home' => null, 'away' => null],
+            ['day' => 3, 'match_time' => '19:00', 'round' => 'event',        'match_label' => 'Αγώνας Επιλέκτων', 'home' => null, 'away' => null],
+            ['day' => 3, 'match_time' => '19:15', 'round' => 'event',        'match_label' => 'Music Show', 'home' => null, 'away' => null],
+            ['day' => 3, 'match_time' => '19:30', 'round' => 'final',        'match_label' => 'ΜΕΓΑΛΟΣ ΤΕΛΙΚΟΣ', 'home' => null, 'away' => null],
         ];
 
-        foreach ($groupMatches as [$home, $away, $day, $time, $label]) {
+        foreach ($matches as $m) {
             GameMatch::create([
-                'team_home_id' => $teams[$home]->id,
-                'team_away_id' => $teams[$away]->id,
-                'day'          => $day,
-                'round'        => 'group',
-                'match_time'   => $time,
-                'match_label'  => $label,
-                'played'       => false,
-            ]);
-        }
-
-        // ΣΑΒΒΑΤΟ — Προημιτελικοί
-        $quarterfinals = [
-            ['Ομάδα A3', 'Ομάδα B2', '2', '16:00', 'Προημιτελικός 1'],
-            ['Ομάδα B3', 'Ομάδα A2', '2', '17:00', 'Προημιτελικός 2'],
-            ['Ομάδα C3', 'Ομάδα D2', '2', '18:00', 'Προημιτελικός 3'],
-            ['Ομάδα D3', 'Ομάδα C2', '2', '19:00', 'Προημιτελικός 4'],
-        ];
-
-        foreach ($quarterfinals as [$home, $away, $day, $time, $label]) {
-            GameMatch::create([
-                'team_home_id' => $teams[$home]->id,
-                'team_away_id' => $teams[$away]->id,
-                'day'          => $day,
-                'round'        => 'quarterfinal',
-                'match_time'   => $time,
-                'match_label'  => $label,
-                'played'       => false,
-            ]);
-        }
-
-        // ΚΥΡΙΑΚΗ — Knockout
-        $firstTeam = Team::first();
-        $knockouts = [
-            ['3', '10:00', 'Κατάταξη 7η-8η',       'seventh_place'],
-            ['3', '11:00', 'Κατάταξη 5η-6η',       'fifth_place'],
-            ['3', '13:30', 'Ημιτελικός 1',          'semifinal'],
-            ['3', '14:45', 'Ημιτελικός 2',          'semifinal'],
-            ['3', '16:30', 'Μικρός Τελικός (3η-4η)', 'third_place'],
-            ['3', '19:30', 'Μεγάλος Τελικός',       'final'],
-        ];
-
-        foreach ($knockouts as [$day, $time, $label, $round]) {
-            GameMatch::create([
-                'team_home_id' => $firstTeam->id,
-                'team_away_id' => $firstTeam->id,
-                'day'          => $day,
-                'round'        => $round,
-                'match_time'   => $time,
-                'match_label'  => $label,
+                'day'          => $m['day'],
+                'match_time'   => $m['match_time'],
+                'round'        => $m['round'],
+                'match_label'  => $m['match_label'] ?? null,
+                'team_home_id' => $m['home'] ? $t[$m['home']]->id : null,
+                'team_away_id' => $m['away'] ? $t[$m['away']]->id : null,
                 'played'       => false,
             ]);
         }

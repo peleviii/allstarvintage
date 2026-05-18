@@ -12,14 +12,14 @@
     <p class="text-sm text-gray-500 mb-6">Νίκη 2-0 → +3β / 0β &nbsp;|&nbsp; Νίκη 2-1 → +2β / +1β</p>
 
 @php $drawDate = \Carbon\Carbon::create(2026, 6, 1, 12, 0, 0); @endphp
-
+<!-- 
 @if(now()->lt($drawDate))
 <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6 text-center">
     <div class="text-3xl mb-2">🎲</div>
     <p class="font-medium text-[#1a3a6b]">Η κλήρωση των ομίλων δεν έχει πραγματοποιηθεί ακόμα.</p>
     <p class="text-sm text-gray-500 mt-1">Δευτέρα <strong>1 Ιουνίου 2026</strong> στις <strong>12:00</strong></p>
 </div>
-@endif
+@endif -->
 
     <!-- Group Tabs -->
     <div class="flex gap-2 mb-6 border-b-2 border-[#d4a017]">

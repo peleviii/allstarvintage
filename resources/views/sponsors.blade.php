@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="max-w-3xl mx-auto px-4 py-8">
+<!-- <div class="max-w-3xl mx-auto px-4 py-8">
     <div class="mb-6">
         <a href="/" class="inline-flex items-center gap-2 bg-[#1f3464] hover:bg-[#1a3a6b] text-white px-4 py-2 rounded-lg transition font-medium text-sm">
             ← Πίσω στην Αρχική
@@ -22,5 +22,7 @@
             <p class="text-xs text-gray-500 mt-1">Υπό την αιγίδα της Περιφέρειας Αττικής</p>
         </div>
     </div>
-</div>
+</div> -->
+
+
 @endsection

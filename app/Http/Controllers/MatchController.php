@@ -10,29 +10,14 @@ class MatchController extends Controller
 {
     public function index()
     {
-        $groupMatches = GameMatch::with(['teamHome', 'teamAway'])
-            ->where('round', 'group')
-            ->orderBy('day')
-            ->get()
-            ->groupBy('day');
+        $matches = GameMatch::with(['teamHome', 'teamAway'])->get();
 
-        $knockoutMatches = GameMatch::with(['teamHome', 'teamAway'])
-            ->whereIn('round', ['quarterfinal', 'semifinal', 'third_place', 'fifth_place', 'seventh_place', 'final', 'event'])
+        $teamsByGroup = Team::whereNotNull('group')
+            ->orderBy('name')
             ->get()
-            ->sortBy(function ($match) {
-                $order = [
-                    'seventh_place' => 1,
-                    'fifth_place'   => 2,
-                    'event'         => 3,
-                    'semifinal'     => 4,
-                    'third_place'   => 5,
-                    'final'         => 6,
-                ];
-                return $order[$match->round] ?? 99;
-            })
-            ->groupBy('round');
+            ->groupBy('group');
 
-        return view('matches.index', compact('groupMatches', 'knockoutMatches'));
+        return view('matches.index', compact('matches', 'teamsByGroup'));
     }
 
     public function update(Request $request, GameMatch $gameMatch)

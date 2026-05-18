@@ -33,6 +33,10 @@
             <div class="text-xs text-gray-500 mt-1">Εκκρεμούν</div>
         </div>
     </div>
+    <a href="{{ route('admin.export.players') }}"
+        class="bg-green-600 text-black px-4 py-2 rounded-lg text-sm hover:bg-green-700 transition">
+        📥 Export Παίκτες Excel
+    </a>
 
     <!-- Quick Links -->
     <div class="grid grid-cols-1 gap-4">

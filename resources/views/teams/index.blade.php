@@ -6,14 +6,8 @@
     <h1 class="text-2xl font-medium text-[#1a3a6b] mb-2">Ομάδες</h1>
     <p class="text-sm text-gray-500 mb-6">All Star Vintage Tournament — Μαρκόπουλο, 5-7 Ιουνίου 2026</p>
 
-    <!-- Μήνυμα -->
-    <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6 text-center">
-        <div class="text-3xl mb-2">🏐</div>
-        <p class="font-medium text-[#1a3a6b]">Οι ομάδες συμπληρώνονται με τις δηλώσεις συμμετοχής!</p>
-        <p class="text-sm text-gray-500 mt-1">Κάθε ομάδα που δηλώνει συμμετοχή εμφανίζεται εδώ μετά την επιβεβαίωση.</p>
-    </div>
+   
 
-    <!-- Ομάδες -->
 <!-- Ομάδες -->
 @php $allTeams = $teams->flatten()->filter(fn($t) => !str_starts_with($t->name, 'Ομάδα ')); @endphp
 
@@ -45,12 +39,12 @@
 @endif
 
     <!-- Κουμπί δήλωσης -->
-    <div class="mt-8 text-center">
+    <!-- <div class="mt-8 text-center">
         <a href="/epikoinonia"
             class="inline-block bg-[#1a3a6b] text-white px-8 py-3 rounded-xl font-medium text-sm hover:bg-[#2563eb] transition">
             🏐 Δήλωσε την ομάδα σου!
         </a>
-    </div>
+    </div> -->
 
 </div>
 @endsection

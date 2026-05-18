@@ -54,4 +54,5 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::post('/tournament/generate-matches', [TournamentController::class, 'generateMatches'])->name('tournament.generate');
     Route::get('/draw', [DrawController::class, 'index'])->name('draw');
     Route::post('/draw', [DrawController::class, 'update'])->name('draw.update');
+    Route::get('/export/players', [DashboardController::class, 'exportExcel'])->name('export.players');
 });

@@ -8,9 +8,8 @@
         </a>
     </div>
 
-    <h1 class="text-2xl font-medium text-[#1a3a6b] mb-2">Επικοινωνία & Δήλωση Συμμετοχής</h1>
-    <p class="text-sm text-gray-500 mb-8">Συμπλήρωσε τη φόρμα και θα επικοινωνήσουμε μαζί σου σύντομα.</p>
-
+    <h1 class="text-2xl font-medium text-[#1a3a6b] mb-2">Επικοινωνία</h1>
+   
     @if(session('success'))
     <div class="bg-green-50 border border-green-200 text-green-700 px-4 py-4 rounded-xl mb-6 text-sm flex items-start gap-3">
         <span class="text-xl">🎉</span>
@@ -26,7 +25,7 @@
     </div>
     @endif
 
-    <div class="bg-white rounded-xl border border-gray-200 p-6">
+    <!-- <div class="bg-white rounded-xl border border-gray-200 p-6">
         <form action="{{ route('contact.send') }}" method="POST" class="space-y-4">
             @csrf
 
@@ -81,7 +80,7 @@
                 🏐 Αποστολή Δήλωσης
             </button>
         </form>
-    </div>
+    </div> -->
 
     <div class="mt-6 bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm text-blue-800">
         <p class="font-medium mb-1">📞 Επικοινωνία</p>

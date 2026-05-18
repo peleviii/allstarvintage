@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Team;
 use App\Models\GameMatch;
+use Illuminate\Http\Request;
 
 class StandingsController extends Controller
 {
@@ -23,7 +24,7 @@ class StandingsController extends Controller
                 $setsAgainst = 0;
                 $played = 0;
 
-                foreach ($team->homeMatches->where('played', true) as $match) {
+                foreach ($team->homeMatches->where('played', true)->where('round', 'group') as $match) {
                     [$hp, $ap] = $match->getPointsHome();
                     $points += $hp;
                     $setsFor += $match->sets_home;
