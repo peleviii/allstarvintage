@@ -20,7 +20,7 @@
                         <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο 1</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="stext-gray-400  text-xs">18:00</span>
+                        <span class="stext-gray-400  text-xs">2-0 (21-9,21-16)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Όμιλος Φιλάθλων Γέρακα</span>
