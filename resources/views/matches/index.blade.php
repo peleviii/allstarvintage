@@ -54,7 +54,7 @@
                         <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο 2</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">20:30</span>
+                        <span class="text-gray-400 text-xs">2-0 (21-10, 21-19)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Φαληρέας</span>
