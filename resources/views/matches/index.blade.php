@@ -71,7 +71,7 @@
                         <span class="font-medium text-gray-800 text-sm">ΕΑΟ Σπάτων</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">21:45</span>
+                        <span class="text-gray-400 text-xs">2-0 (21-10, 21-12)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Α Α Σ Κερατσινιού Δραπετσώνας - Κότινος</span>
