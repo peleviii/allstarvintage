@@ -37,7 +37,7 @@
                         <span class="font-medium text-gray-800 text-sm">Volley Maniacs</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">19:15</span>
+                        <span class="text-gray-400 text-xs">1-2 (21-12,12-21,11-15)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Ένωση Γαλατσίου</span>
