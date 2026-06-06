@@ -274,7 +274,7 @@
                         <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο 2</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">21:00</span>
+                        <span class="text-gray-400 text-xs">2-1 (21-16, 8-21, 15-13)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Α.Στε.Γοι.</span>
@@ -315,7 +315,7 @@
 
             <div class="px-4 py-3 hover:bg-gray-50 transition">
                 <div class="flex items-center gap-2 mb-1">
-                    <span class="text-xs text-gray-400 font-medium">Κατάταξη 7η-8η</span>
+                    <span class="text-xs text-gray-400 font-medium">Κατάταξη 1</span>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
@@ -332,11 +332,11 @@
 
             <div class="px-4 py-3 hover:bg-gray-50 transition">
                 <div class="flex items-center gap-2 mb-1">
-                    <span class="text-xs text-gray-400 font-medium">Κατάταξη 5η-6η</span>
+                    <span class="text-xs text-gray-400 font-medium">Κατάταξη 2</span>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">ΗΠ</span>
+                        <span class="font-medium text-gray-800 text-sm">Α.Στε.Γοι.</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">10:15</span>
@@ -364,7 +364,7 @@
                         <span class="text-gray-400 text-xs">11:30</span>
                     </div>
                     <div class="flex-1 text-left">
-                        <span class="font-medium text-gray-800 text-sm">Νικητής ΠΗΤ2</span>
+                        <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο 2</span>
                     </div>
                 </div>
             </div>
