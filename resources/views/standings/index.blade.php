@@ -229,8 +229,8 @@
                         <td class="px-3 py-3 text-center text-gray-600">2</td>
                         <td class="px-3 py-3 text-center text-gray-600">0</td>
                         <td class="px-3 py-3 text-center text-gray-600">4</td>
-                        <td class="px-3 py-3 text-center text-gray-600">1</td>
-                        <td class="px-3 py-3 text-center font-bold text-[#1a3a6b]">5</td>
+                        <td class="px-3 py-3 text-center text-gray-600">0</td>
+                        <td class="px-3 py-3 text-center font-bold text-[#1a3a6b]">6</td>
                     </tr>
                     <tr class="bg-blue-50 border-l-2 border-[#2563eb] ">
                         <td class="px-4 py-3 font-medium text-gray-800">
@@ -240,9 +240,9 @@
                         <td class="px-3 py-3 text-center text-gray-600">1</td>
                         <td class="px-3 py-3 text-center text-gray-600">0</td>
                         <td class="px-3 py-3 text-center text-gray-600">1</td>
-                        <td class="px-3 py-3 text-center text-gray-600">1</td>
+                        <td class="px-3 py-3 text-center text-gray-600">0</td>
                         <td class="px-3 py-3 text-center text-gray-600">2</td>
-                        <td class="px-3 py-3 text-center font-bold text-[#1a3a6b]">1</td>
+                        <td class="px-3 py-3 text-center font-bold text-[#1a3a6b]">0</td>
                     </tr>
                     <tr class="bg-gray-50 border-b border-gray-100">
                         <td class="px-4 py-3 font-medium text-gray-800">
