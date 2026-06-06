@@ -257,10 +257,10 @@
                         <span class="font-medium text-gray-800 text-sm">Τιτάνες</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">19:45</span>
+                        <span class="text-gray-400 text-xs">0-2 (21-23, 12-21)</span>
                     </div>
                     <div class="flex-1 text-left">
-                        <span class="font-medium text-gray-800 text-sm"> Α.ΚΕ.Ζωγράφου</span>
+                        <span class="font-medium text-gray-800 text-sm">Α.ΚΕ.Ζωγράφου</span>
                     </div>
                 </div>
             </div>
@@ -319,7 +319,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">ΗΠ</span>
+                        <span class="font-medium text-gray-800 text-sm">Τιτάνες</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">09:00</span>
@@ -375,7 +375,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">Νικητής ΠΗΤ3</span>
+                        <span class="font-medium text-gray-800 text-sm">Α.ΚΕ.Ζωγράφου</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">12:45</span>
