@@ -181,7 +181,7 @@
                         <span class="font-medium text-gray-800 text-sm">Ένωση Γαλατσίου</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">14:45</span>
+                        <span class="text-gray-400 text-xs">0-2 (19-21, 9-21)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Α.ΚΕ.Ζωγράφου</span>
@@ -237,7 +237,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">Αναμένεται</span>
+                        <span class="font-medium text-gray-800 text-sm"> ΕΑΟ Σπάτων</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">18:30</span>
@@ -260,7 +260,7 @@
                         <span class="text-gray-400 text-xs">19:45</span>
                     </div>
                     <div class="flex-1 text-left">
-                        <span class="font-medium text-gray-800 text-sm">Αναμένεται</span>
+                        <span class="font-medium text-gray-800 text-sm"> Α.ΚΕ.Ζωγράφου</span>
                     </div>
                 </div>
             </div>
@@ -294,7 +294,7 @@
                         <span class="text-gray-400 text-xs">22:15</span>
                     </div>
                     <div class="flex-1 text-left">
-                        <span class="font-medium text-gray-800 text-sm">Αναμένεται</span>
+                        <span class="font-medium text-gray-800 text-sm">Ένωση Γαλατσίου</span>
                     </div>
                 </div>
             </div>
@@ -319,13 +319,13 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">3ος Ομίλου Α</span>
+                        <span class="font-medium text-gray-800 text-sm">ΗΠ</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">09:00</span>
                     </div>
                     <div class="flex-1 text-left">
-                        <span class="font-medium text-gray-800 text-sm">3ος Ομίλου Β</span>
+                        <span class="font-medium text-gray-800 text-sm">ΗΠ</span>
                     </div>
                 </div>
             </div>
@@ -336,13 +336,13 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">3ος Ομίλου Γ</span>
+                        <span class="font-medium text-gray-800 text-sm">ΗΠ</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">10:15</span>
                     </div>
                     <div class="flex-1 text-left">
-                        <span class="font-medium text-gray-800 text-sm">3ος Ομίλου Δ</span>
+                        <span class="font-medium text-gray-800 text-sm">ΗΠ</span>
                     </div>
                 </div>
             </div>
@@ -393,11 +393,11 @@
 
             <div class="px-4 py-3 hover:bg-gray-50 transition">
                 <div class="flex items-center gap-2 mb-1">
-                    <span class="text-xs text-gray-400 font-medium">Αποκλεισμένοι 1</span>
+                    <span class="text-xs text-gray-400 font-medium">Volley Maniacs</span>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">Ηττημ. Ομίλου Α</span>
+                        <span class="font-medium text-gray-800 text-sm">Όμιλος Φιλάθλων Γέρακα</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">14:00</span>
