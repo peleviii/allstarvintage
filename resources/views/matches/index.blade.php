@@ -113,7 +113,7 @@
                         <span class="font-medium text-gray-800 text-sm">Volley Maniacs</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">09:45</span>
+                        <span class="text-gray-400 text-xs">0-2 (19-21, 18-21)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Α.ΚΕ.Ζωγράφου</span>
