@@ -17,7 +17,7 @@
         <p class="text-gray-400 text-sm mb-6">5-7 Ιουνίου 2026</p>
 
         <a href="https://youtube.com/live/5lJ8medkhJ4?feature=share" class="inline-block bg-[#dc4416] text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-[#2563eb] transition">
-           Δες το live stream! εδώ
+            Δες το live stream! εδώ
         </a>
     </div>
 
@@ -56,11 +56,12 @@
 </div>
 <div class="max-w-3xl mx-auto px-4 pb-2 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
     <div class="bg-white rounded-xl border border-gray-200 p-4">
-        <div class="text-2xl mb-1">📺</div>
-        <div class="text-xs font-medium text-[#1a3a6b]"> <a href="https://youtube.com/live/5lJ8medkhJ4?feature=share" >
-      
-        </a>  live streaming!</div>
-        <div class="text-xs text-gray-400 mt-1">Youtube</div>
+        <a href="https://youtube.com/live/5lJ8medkhJ4?feature=share">
+            <div class="text-2xl mb-1">📺</div>
+            <div class="text-xs font-medium text-[#1a3a6b]">
+                live streaming!</div>
+            <div class="text-xs text-gray-400 mt-1">Youtube</div>
+        </a>
     </div>
     <div class="bg-white rounded-xl border border-gray-200 p-4">
         <div class="text-2xl mb-1">⭐</div>
