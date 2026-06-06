@@ -215,7 +215,7 @@
                         <span class="font-medium text-gray-800 text-sm">Α Α Σ Κερατσινιού Δραπετσώνας - Κότινος</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">17:15</span>
+                        <span class="text-gray-400 text-xs">0-2 (6-21, 7-21)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Α.Στε.Γοι.</span>
@@ -277,7 +277,7 @@
                         <span class="text-gray-400 text-xs">21:00</span>
                     </div>
                     <div class="flex-1 text-left">
-                        <span class="font-medium text-gray-800 text-sm">Αναμένεται</span>
+                        <span class="font-medium text-gray-800 text-sm">Α.Στε.Γοι.</span>
                     </div>
                 </div>
             </div>
@@ -414,7 +414,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">Ηττημ. Ομίλου Γ</span>
+                        <span class="font-medium text-gray-800 text-sm">Α Α Σ Κερατσινιού Δραπετσώνας - Κότινος</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">15:15</span>

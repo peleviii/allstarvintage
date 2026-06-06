@@ -237,23 +237,23 @@
                             <span class="text-xs text-gray-400 mr-2">2</span>
                             Α.Στε.Γοι.
                         </td>
-                        <td class="px-3 py-3 text-center text-gray-600">1</td>
-                        <td class="px-3 py-3 text-center text-gray-600">0</td>
-                        <td class="px-3 py-3 text-center text-gray-600">1</td>
-                        <td class="px-3 py-3 text-center text-gray-600">0</td>
                         <td class="px-3 py-3 text-center text-gray-600">2</td>
-                        <td class="px-3 py-3 text-center font-bold text-[#1a3a6b]">0</td>
+                        <td class="px-3 py-3 text-center text-gray-600">1</td>
+                        <td class="px-3 py-3 text-center text-gray-600">1</td>
+                        <td class="px-3 py-3 text-center text-gray-600">2</td>
+                        <td class="px-3 py-3 text-center text-gray-600">2</td>
+                        <td class="px-3 py-3 text-center font-bold text-[#1a3a6b]">3</td>
                     </tr>
                     <tr class="bg-gray-50 border-b border-gray-100">
                         <td class="px-4 py-3 font-medium text-gray-800">
                             <span class="text-xs text-gray-400 mr-2">3</span>
                        Α Α Σ Κερατσινιού Δραπετσώνας - Κότινος
                         </td>
-                        <td class="px-3 py-3 text-center text-gray-600">1</td>
-                        <td class="px-3 py-3 text-center text-gray-600">0</td>
-                        <td class="px-3 py-3 text-center text-gray-600">1</td>
+                        <td class="px-3 py-3 text-center text-gray-600">2</td>
                         <td class="px-3 py-3 text-center text-gray-600">0</td>
                         <td class="px-3 py-3 text-center text-gray-600">2</td>
+                        <td class="px-3 py-3 text-center text-gray-600">0</td>
+                        <td class="px-3 py-3 text-center text-gray-600">4</td>
                         <td class="px-3 py-3 text-center font-bold text-[#1a3a6b]">0</td>
                     </tr>
                 </tbody>
