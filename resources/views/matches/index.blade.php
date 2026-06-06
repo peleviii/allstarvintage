@@ -237,13 +237,13 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm"> ΕΑΟ Σπάτων</span>
+                        <span class="font-medium text-gray-800 text-sm">ΕΑΟ Σπάτων</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">18:30</span>
+                        <span class="text-gray-400 text-xs">2-0 (21-10, 21-14)</span>
                     </div>
                     <div class="flex-1 text-left">
-                        <span class="font-medium text-gray-800 text-sm"> Α.Σ. Ιτέας</span>
+                        <span class="font-medium text-gray-800 text-sm">Α.Σ. Ιτέας</span>
                     </div>
                 </div>
             </div>
@@ -342,7 +342,7 @@
                         <span class="text-gray-400 text-xs">10:15</span>
                     </div>
                     <div class="flex-1 text-left">
-                        <span class="font-medium text-gray-800 text-sm">ΗΠ</span>
+                        <span class="font-medium text-gray-800 text-sm">Α.Σ. Ιτέας</span>
                     </div>
                 </div>
             </div>
@@ -381,7 +381,7 @@
                         <span class="text-gray-400 text-xs">12:45</span>
                     </div>
                     <div class="flex-1 text-left">
-                        <span class="font-medium text-gray-800 text-sm">Νικητής ΠΗΤ4</span>
+                        <span class="font-medium text-gray-800 text-sm">ΕΑΟ Σπάτων</span>
                     </div>
                 </div>
             </div>
