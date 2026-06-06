@@ -254,7 +254,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">Αναμένεται</span>
+                        <span class="font-medium text-gray-800 text-sm">Τιτάνες</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">19:45</span>
@@ -271,7 +271,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">Αναμένεται</span>
+                        <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο 2</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">21:00</span>
@@ -288,7 +288,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">Αναμένεται</span>
+                        <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο 1</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">22:15</span>
