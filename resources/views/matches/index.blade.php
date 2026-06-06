@@ -291,7 +291,7 @@
                         <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο 1</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">22:15</span>
+                        <span class="text-gray-400 text-xs">2-0 (21-14, 21-6)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Ένωση Γαλατσίου</span>
@@ -325,7 +325,7 @@
                         <span class="text-gray-400 text-xs">09:00</span>
                     </div>
                     <div class="flex-1 text-left">
-                        <span class="font-medium text-gray-800 text-sm">ΗΠ</span>
+                        <span class="font-medium text-gray-800 text-sm">Ένωση Γαλατσίου</span>
                     </div>
                 </div>
             </div>
@@ -354,7 +354,7 @@
 
             <div class="px-4 py-3 hover:bg-gray-50 transition">
                 <div class="flex items-center gap-2 mb-1">
-                    <span class="text-xs text-gray-400 font-medium">Ημιτελικός 1</span>
+                    <span class="text-xs text-gray-400 font-medium">Α.Ο. Μαρκόπουλο  1</span>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
