@@ -164,7 +164,7 @@
                         <span class="font-medium text-gray-800 text-sm">Όμιλος Φιλάθλων Γέρακα</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">13:30</span>
+                        <span class="text-gray-400 text-xs">0-2 (17-21, 11-21)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Τιτάνες</span>
