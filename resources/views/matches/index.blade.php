@@ -361,7 +361,7 @@
                         <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο  1</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">11:30</span>
+                        <span class="text-gray-400 text-xs">2-1 </span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο 2</span>
@@ -453,7 +453,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">Ηττημ. ΗΤ1</span>
+                        <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο  2</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">17:45</span>
@@ -485,7 +485,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-1 text-right">
-                        <span class="font-medium text-gray-800 text-sm">Νικητής ΗΤ1</span>
+                        <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο  1</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
                         <span class="text-gray-400 text-xs">19:30</span>
