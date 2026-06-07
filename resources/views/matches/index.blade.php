@@ -339,7 +339,7 @@
                         <span class="font-medium text-gray-800 text-sm">Α.Στε.Γοι.</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">10:15</span>
+                        <span class="text-gray-400 text-xs">2-0 (21-15, 21-18)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Α.Σ. Ιτέας</span>
