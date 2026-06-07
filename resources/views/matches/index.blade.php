@@ -322,7 +322,7 @@
                         <span class="font-medium text-gray-800 text-sm">Τιτάνες</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">09:00</span>
+                        <span class="text-gray-400 text-xs">2-0</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Ένωση Γαλατσίου</span>
