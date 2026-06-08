@@ -17,24 +17,24 @@
         <p class="text-gray-400 text-sm mb-6">5-7 Ιουνίου 2026</p>
 
         <a href="https://www.youtube.com/live/5lJ8medkhJ4">
-            <div class=" bg-red-500   text-white px-6 py-3 font-medium text-sm  border-t-2 border-red-600 flex justify-center rounded-full mt-4 hover:bg-red-900 transition">
+            <div class=" text-white px-6 py-3 font-medium text-sm  border-t-2  flex justify-center rounded-full mt-4  transition">
                 Δες το Βίντεο του Σαββάτου ! εδώ
             </div>
         </a>
-        <div class=" bg-red-500    border-t-2 border-red-600 flex justify-center rounded-full mt-4">
-            <a href="https://www.youtube.com/live/K6Hc2f8aVoA" class="inline-block text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-redre-900 transition">
-                Δες το Βίντεο της Κυριακής ! εδώ
-            </a>
-        </div>
-        <div class="px-4 py-3 bg-[#d4a017] border-t-2 border-[#d4a017] flex justify-center rounded-full">
-            <span class="text-white font-bold uppercase tracking-wider">🥇 ΕΑΟ Σπάτων</span>
-        </div>
+        <a href="https://www.youtube.com/live/K6Hc2f8aVoA"">
+        <div class=" text-white px-6 py-3 font-medium text-sm border-t-2 flex justify-center rounded-full mt-4 transition">
+            Δες το Βίντεο της Κυριακής ! εδώ
     </div>
+    </a>
+    <div class="px-4 py-3 bg-[#d4a017] border-t-2 border-[#d4a017] flex justify-center rounded-full">
+        <span class="text-white font-bold uppercase tracking-wider">🥇 ΕΑΟ Σπάτων</span>
+    </div>
+</div>
 
-    <!-- Small Logo -->
-    <div class="flex-1 flex justify-center">
-        <img src="{{ asset('images/1agkalia.png') }}" alt="Agkalia Logo" class="w-40 h-40 md:w-80 md:h-80 mx-auto rounded-full ">
-    </div>
+<!-- Small Logo -->
+<div class="flex-1 flex justify-center">
+    <img src="{{ asset('images/1agkalia.png') }}" alt="Agkalia Logo" class="w-40 h-40 md:w-80 md:h-80 mx-auto rounded-full ">
+</div>
 </div>
 <div class="h-40 bg-[#1f3464]"></div>
 
