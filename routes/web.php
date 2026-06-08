@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\TeamAdminController;
 use App\Http\Controllers\Admin\TournamentController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Admin\DrawController;
+use App\Http\Controllers\GalleryController;
 
 
 require __DIR__ . '/auth.php';
@@ -21,6 +22,9 @@ Route::get('/', function () {
 Route::get('/kanones', function () {
     return view('rules');
 });
+
+Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery.index');
+Route::get('/gallery/{folder}', [GalleryController::class, 'show'])->name('gallery.show');
 
 Route::get('/programa', [MatchController::class, 'index'])->name('matches.index');
 

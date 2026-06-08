@@ -98,9 +98,10 @@
         <div class="text-2xl mb-2">🏐</div>
         <div class="text-sm font-medium text-[#1a3a6b]">Ομάδες</div>
     </a>
-    <a href="/vathmologia" class="bg-white rounded-xl border border-gray-200 p-5 text-center hover:border-[#2563eb] hover:shadow-sm transition">
-        <div class="text-2xl mb-2">🏆</div>
-        <div class="text-sm font-medium text-[#1a3a6b]">Βαθμολογία</div>
+
+    <a href="/gallery" class="bg-white rounded-xl border border-gray-200 p-5 text-center hover:border-[#2563eb] hover:shadow-sm transition">
+        <div class="text-2xl mb-2">📸</div>
+        <div class="text-sm font-medium text-[#1a3a6b]">Φωτογραφίες</div>
     </a>
     <a href="/kanones" class="bg-white rounded-xl border border-gray-200 p-5 text-center hover:border-[#2563eb] hover:shadow-sm transition">
         <div class="text-2xl mb-2">📋</div>
