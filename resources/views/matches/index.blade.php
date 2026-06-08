@@ -464,15 +464,6 @@
                 </div>
             </div>
 
-            {{-- Events --}}
-            <div class="px-4 py-3 bg-blue-50 border-t border-gray-200 flex items-center gap-4">
-                <span class="text-[#1a3a6b] font-bold text-sm min-w-[60px]">19:00</span>
-                <span class="text-[#1a3a6b] font-medium text-sm">🏐 Αγώνας Επιλέκτων</span>
-            </div>
-            <div class="px-4 py-3 bg-blue-50 border-t border-gray-200 flex items-center gap-4">
-                <span class="text-[#1a3a6b] font-bold text-sm min-w-[60px]">19:15</span>
-                <span class="text-[#1a3a6b] font-medium text-sm">🎵 Music Show</span>
-            </div>
 
             <div class="px-4 py-3 hover:bg-yellow-50 transition">
                 <div class="flex items-center gap-2 mb-1">
