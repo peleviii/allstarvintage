@@ -434,7 +434,7 @@
                         <span class="font-medium text-gray-800 text-sm">Volley Maniacs</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">16:30</span>
+                        <span class="text-gray-400 text-xs">2-1</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Φαληρέας</span>
@@ -456,7 +456,7 @@
                         <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο  2</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">17:45</span>
+                        <span class="text-gray-400 text-xs">0-2</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Α.ΚΕ.Ζωγράφου</span>
@@ -488,12 +488,15 @@
                         <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο  1</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="text-gray-400 text-xs">19:30</span>
+                        <span class="text-gray-400 text-xs">1-2</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">ΕΑΟ Σπάτων</span>
                     </div>
                 </div>
+            </div>
+             <div class="px-4 py-3 bg-[#d4a017] border-t-2 border-[#d4a017]">
+                <span class="text-white font-bold uppercase tracking-wider">🥇 ΕΑΟ Σπάτων</span>
             </div>
 
         </div>
