@@ -490,7 +490,7 @@
                     </div>
                 </div>
             </div>
-             <div class="px-4 py-3 bg-[#d4a017] border-t-2 border-[#d4a017] flex items-center">
+             <div class="px-4 py-3 bg-[#d4a017] border-t-2 border-[#d4a017] flex justify-center">
                 <span class="text-white font-bold uppercase tracking-wider">🥇 ΕΑΟ Σπάτων</span>
             </div>
 
