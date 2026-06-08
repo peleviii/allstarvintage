@@ -16,13 +16,13 @@
         </p>
         <p class="text-gray-400 text-sm mb-6">5-7 Ιουνίου 2026</p>
 
-        <div class="px-4 py-3 bg-blue-500    border-t-2 border-blue-600 flex justify-center rounded-full mt-4">
-            <a href="https://www.youtube.com/live/5lJ8medkhJ4" class="inline-block  text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-blue-900 transition">
+        <div class=" bg-red-500    border-t-2 border-red-600 flex justify-center rounded-full mt-4">
+            <a href="https://www.youtube.com/live/5lJ8medkhJ4" class="inline-block  text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-red-900 transition">
                 Δες το Βίντεο του Σαββάτου ! εδώ
             </a>
         </div>
-        <div class="px-4 py-3 bg-blue-500    border-t-2 border-blue-600 flex justify-center rounded-full mt-4">
-            <a href="https://www.youtube.com/live/K6Hc2f8aVoA" class="inline-block text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-blue-900 transition">
+        <div class=" bg-red-500    border-t-2 border-red-600 flex justify-center rounded-full mt-4">
+            <a href="https://www.youtube.com/live/K6Hc2f8aVoA" class="inline-block text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-redre-900 transition">
                 Δες το Βίντεο της Κυριακής ! εδώ
             </a>
         </div>
