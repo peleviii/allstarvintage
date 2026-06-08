@@ -474,11 +474,6 @@
                 <span class="text-[#1a3a6b] font-medium text-sm">🎵 Music Show</span>
             </div>
 
-            {{-- Μεγάλος Τελικός --}}
-            <div class="px-4 py-3 bg-[#d4a017] border-t-2 border-[#d4a017]">
-                <span class="text-white font-bold text-sm uppercase tracking-wider">🥇 Μεγάλος Τελικός</span>
-            </div>
-
             <div class="px-4 py-3 hover:bg-yellow-50 transition">
                 <div class="flex items-center gap-2 mb-1">
                     <span class="text-xs text-gray-400 font-medium">ΜΕΓΑΛΟΣ ΤΕΛΙΚΟΣ</span>
@@ -495,7 +490,7 @@
                     </div>
                 </div>
             </div>
-             <div class="px-4 py-3 bg-[#d4a017] border-t-2 border-[#d4a017]">
+             <div class="px-4 py-3 bg-[#d4a017] border-t-2 border-[#d4a017] flex items-center">
                 <span class="text-white font-bold uppercase tracking-wider">🥇 ΕΑΟ Σπάτων</span>
             </div>
 
