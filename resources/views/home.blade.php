@@ -17,7 +17,7 @@
         <p class="text-gray-400 text-sm mb-6">5-7 Ιουνίου 2026</p>
 
         <div class=" bg-red-500    border-t-2 border-red-600 flex justify-center rounded-full mt-4">
-            <a href="https://www.youtube.com/live/5lJ8medkhJ4" class="inline-block  text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-red-900 transition">
+            <a href="https://www.youtube.com/live/5lJ8medkhJ4" class="inline-block  bg-red-500  text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-red-900 transition">
                 Δες το Βίντεο του Σαββάτου ! εδώ
             </a>
         </div>
