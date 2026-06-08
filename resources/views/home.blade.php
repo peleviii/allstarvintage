@@ -16,16 +16,16 @@
         </p>
         <p class="text-gray-400 text-sm mb-6">5-7 Ιουνίου 2026</p>
 
-        <a href="https://www.youtube.com/live/5lJ8medkhJ4" class="inline-block bg-blue-700 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-[#2563eb] transition">
+        <a href="https://www.youtube.com/live/5lJ8medkhJ4" class="px-4 py-3 bg-green-500 border-t-2 border-green-700 flex justify-center rounded-full mt-4 hover:bg-green-600 transition">
             Δες το Βίντεο του Σαββάτου ! εδώ
         </a>
 
-        <a href="https://www.youtube.com/live/K6Hc2f8aVoA" class="inline-block bg-[#dc4416] text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-[#2563eb] transition">
+        <a href="https://www.youtube.com/live/K6Hc2f8aVoA" class="px-4 py-3 bg-red-500 border-t-2 border-red-700 flex justify-center rounded-full mt-4 hover:bg-red-600 transition">
             Δες το Βίντεο της Κυριακής ! εδώ
         </a>
 
-        <div class="px-4 py-3 bg-[#d4a017] border-t-2 border-[#d4a017] flex justify-center">
-            <span class="text-white font-bold uppercase tracking-wider">Νικητής 🥇 ΕΑΟ Σπάτων</span>
+        <div class="px-4 py-3 bg-yellow-300 border-t-2 border-[#d4a017] flex justify-center">
+            <span class="text-white font-bold uppercase tracking-wider">🥇 ΕΑΟ Σπάτων</span>
         </div>
     </div>
 
