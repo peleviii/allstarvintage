@@ -47,7 +47,7 @@
             <nav class="hidden md:flex items-center gap-6 text-sm">
                 <a href="/" class="text-white hover:text-[#1f3464] transition">Αρχική</a>
                 <a href="/kanones" class="text-white hover:text-[#1f3464] transition">Κανόνες</a>
-                <a href="/programa" class="text-white hover:text-[#1f3464] transition">Πρόγραμμα</a>
+                <a href="/programa" class="text-white hover:text-[#1f3464] transition">Αποτελέσματα</a>
                 <a href="/omades" class="text-white hover:text-[#1f3464] transition">Ομάδες</a>
                 <a href="/vathmologia" class="text-white hover:text-[#1f3464] transition">Βαθμολογία</a>
                 <a href="/epikoinonia" class="text-white hover:text-[#1f3464] transition">Επικοινωνία</a>
@@ -61,7 +61,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-[#122d57] border-t border-[#d4a017]">
             <a href="/" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Αρχική</a>
             <a href="/kanones" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Κανόνες</a>
-            <a href="/programa" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Πρόγραμμα</a>
+            <a href="/programa" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Αποτελέσματα</a>
             <a href="/omades" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Ομάδες</a>
             <a href="/vathmologia" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Βαθμολογία</a>
             <a href="/epikoinonia" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Επικοινωνία</a>

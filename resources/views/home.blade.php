@@ -92,7 +92,7 @@
 <div class="max-w-5xl mx-auto px-4 pb-10 grid grid-cols-2 md:grid-cols-4 gap-4">
     <a href="/programa" class="bg-white rounded-xl border border-gray-200 p-5 text-center hover:border-[#2563eb] hover:shadow-sm transition">
         <div class="text-2xl mb-2">📅</div>
-        <div class="text-sm font-medium text-[#1a3a6b]">Πρόγραμμα</div>
+        <div class="text-sm font-medium text-[#1a3a6b]">Αποτελέσματα</div>
     </a>
     <a href="/omades" class="bg-white rounded-xl border border-gray-200 p-5 text-center hover:border-[#2563eb] hover:shadow-sm transition">
         <div class="text-2xl mb-2">🏐</div>

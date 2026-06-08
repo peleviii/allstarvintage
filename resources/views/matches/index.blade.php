@@ -3,7 +3,7 @@
 @section('content')
 <div class="max-w-3xl mx-auto px-4 py-8 pb-24">
 
-    <h1 class="text-2xl font-medium text-[#1a3a6b] mb-6">Πρόγραμμα Αγώνων</h1>
+    <h1 class="text-2xl font-medium text-[#1a3a6b] mb-6">Αποτελέσματα Αγώνων</h1>
 
     {{-- ===== ΠΑΡΑΣΚΕΥΗ ===== --}}
     <div class="mb-6">
@@ -20,7 +20,7 @@
                         <span class="font-medium text-gray-800 text-sm">Α.Ο. Μαρκόπουλο 1</span>
                     </div>
                     <div class="flex flex-col items-center justify-center min-w-[90px] gap-1">
-                        <span class="stext-gray-400  text-xs">2-0 (21-9,21-16)</span>
+                        <span class="text-gray-400  text-xs">2-0 (21-9,21-16)</span>
                     </div>
                     <div class="flex-1 text-left">
                         <span class="font-medium text-gray-800 text-sm">Όμιλος Φιλάθλων Γέρακα</span>
