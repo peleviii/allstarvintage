@@ -28,7 +28,7 @@
 </div>
 
 <!-- Lightbox -->
-<div id="lightbox" onclick="handleLightboxClick(event)" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:9999; flex-direction:column;">
+<div id="lightbox" onclick="handleLightboxClick(event)" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:99999; flex-direction:column;">
 
     <!-- Image -->
     <div style="flex:1; display:flex; align-items:center; justify-content:center; padding:16px;">
