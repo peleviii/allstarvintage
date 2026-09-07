@@ -49,8 +49,8 @@
                 <a href="/kanones" class="text-white hover:text-[#1f3464] transition">Κανόνες</a>
                 <a href="/programa" class="text-white hover:text-[#1f3464] transition">Αποτελέσματα</a>
                 <a href="/omades" class="text-white hover:text-[#1f3464] transition">Ομάδες</a>
-                <a href="/gallery" class="text-white hover:text-[#1f3464] transition">Φωτογραφίες</a>
-                <a href="/epikoinonia" class="text-white hover:text-[#1f3464] transition">Επικοινωνία</a>
+                <!-- <a href="/gallery" class="text-white hover:text-[#1f3464] transition">Φωτογραφίες</a> -->
+                <!-- <a href="/epikoinonia" class="text-white hover:text-[#1f3464] transition">Επικοινωνία</a> -->
             </nav>
             <button id="menu-btn" class="md:hidden text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -63,8 +63,8 @@
             <a href="/kanones" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Κανόνες</a>
             <a href="/programa" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Αποτελέσματα</a>
             <a href="/omades" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Ομάδες</a>
-            <a href="/gallery" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Φωτογραφίες</a>
-            <a href="/epikoinonia" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Επικοινωνία</a>
+            <!-- <a href="/gallery" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Φωτογραφίες</a> -->
+            <!-- <a href="/epikoinonia" class="block px-4 py-3 text-gray-300 hover:text-[#d4a017] text-sm border-b border-white/10">Επικοινωνία</a> -->
         </div>
     </header>
 
